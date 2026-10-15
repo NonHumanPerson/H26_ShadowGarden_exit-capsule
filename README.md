@@ -1,4 +1,4 @@
-# Dependency Exit Capsule
+# exit-capsule
 
 > **An automated Dependency Resilience & Maintenance Agent** that analyzes any Python repository, identifies at-risk dependencies using live PyPI metadata, maps exact code usage via AST, executes verifiable baseline and migration tests, and generates a comprehensive Exit Capsule report with strict separation between verified observations and AI recommendations.
 
