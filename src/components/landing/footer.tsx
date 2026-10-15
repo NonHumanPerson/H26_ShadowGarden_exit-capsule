@@ -4,11 +4,11 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import {
   ArrowRight,
-  Pill,
   Check,
   Copy,
   Github,
   Heart,
+  Pill,
   Scale,
   Sparkles,
 } from "lucide-react";
@@ -27,9 +27,8 @@ function FinalCTA() {
   };
 
   return (
-    <div className="relative overflow-hidden rounded-2xl border border-emerald-500/20 bg-gradient-to-b from-slate-900/80 to-[#0b1120] px-6 sm:px-10 py-12 sm:py-16 text-center">
-      <div className="absolute inset-0 grid-backdrop opacity-70 pointer-events-none" />
-      <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-[560px] h-[280px] bg-emerald-500/[0.08] blur-[90px] rounded-full pointer-events-none" />
+    <div className="relative overflow-hidden rounded-2xl border border-[#2b261f] bg-[#191613] px-6 sm:px-10 py-12 sm:py-16 text-center">
+      <div className="absolute inset-0 paper-grid opacity-60 pointer-events-none" />
 
       <motion.div
         initial={{ opacity: 0, y: 22 }}
@@ -38,16 +37,16 @@ function FinalCTA() {
         transition={{ duration: 0.55 }}
         className="relative"
       >
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-violet-500/25 bg-violet-500/[0.07] font-mono text-[11px] text-violet-300 mb-5">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#2b261f] bg-[#1d1a15] font-mono text-[11px] text-[#ad90a5] mb-5">
           <Sparkles className="w-3 h-3" />
           PRs welcome · good first issues available
         </div>
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight text-slate-100 max-w-2xl mx-auto leading-tight">
+        <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-medium tracking-tight text-[#e9e4da] max-w-2xl mx-auto leading-snug">
           Ship your first{" "}
-          <span className="text-gradient-neon">Dependency Exit Capsule</span>{" "}
-          in 60 seconds
+          <em className="italic text-[#d3a05c]">Exit Capsule</em> in 60
+          seconds
         </h2>
-        <p className="mt-4 text-slate-400 max-w-xl mx-auto text-sm sm:text-base leading-relaxed">
+        <p className="mt-4 text-[#a29a8d] max-w-xl mx-auto text-sm sm:text-base leading-relaxed">
           Clone the skill, point it at any Python repository, and watch it
           scan manifests, map AST call sites, query live PyPI data, and run
           sandbox verification — all inside your favorite agent harness.
@@ -56,7 +55,7 @@ function FinalCTA() {
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
           <button
             onClick={copy}
-            className="group inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-emerald-500 text-[#052018] font-semibold text-sm hover:bg-emerald-400 transition-all shadow-[0_8px_40px_-8px_rgba(16,185,129,0.55)]"
+            className="group inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-[#d3a05c] text-[#21190f] font-semibold text-sm hover:bg-[#dcae6e] transition-colors"
           >
             {copied ? (
               <>
@@ -73,7 +72,7 @@ function FinalCTA() {
             href={GITHUB_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl border border-slate-700 bg-slate-900/60 glass-panel text-slate-200 font-medium text-sm hover:border-emerald-500/40 transition-all"
+            className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl border border-[#2b261f] bg-[#1d1a15] text-[#e9e4da] font-medium text-sm hover:border-[#4a3f2d] transition-colors"
           >
             <Github className="w-4 h-4" />
             Star on GitHub
@@ -87,7 +86,7 @@ function FinalCTA() {
 
 export function Footer() {
   return (
-    <footer className="relative mt-8 border-t border-slate-800/70 bg-[#070a12]">
+    <footer className="relative mt-8 border-t border-[#2b261f] bg-[#12100d]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 pt-14 pb-8 flex flex-col">
         <FinalCTA />
 
@@ -96,29 +95,27 @@ export function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2.5">
-              <span className="flex items-center justify-center w-8 h-8 rounded-lg border border-emerald-500/40 bg-emerald-500/10">
-                <Pill className="w-4 h-4 text-emerald-400" />
+              <span className="flex items-center justify-center w-8 h-8 rounded-lg border border-[#3a2f1f] bg-[#221c12]">
+                <Pill className="w-4 h-4 text-[#d3a05c]" />
               </span>
-              <span className="font-mono text-sm text-slate-300">
-                dependency<span className="text-emerald-400">.exit</span>
-                <span className="text-slate-700">/</span>
-                <span className="text-slate-500">capsule</span>
+              <span className="font-mono text-sm text-[#e9e4da]">
+                exit<span className="text-[#d3a05c]">-capsule</span>
               </span>
             </div>
-            <p className="mt-3.5 text-[13px] text-slate-500 leading-relaxed max-w-sm">
-              An autonomous dependency maintenance agent skill for Python —
-              built to the Agent Skills Open Standard, verified through
-              isolated sandbox execution.
+            <p className="mt-3.5 text-[13px] text-[#7a7367] leading-relaxed max-w-sm">
+              A dependency maintenance agent skill for Python — built to the
+              Agent Skills Open Standard, verified through isolated sandbox
+              execution.
             </p>
             <div className="mt-4 flex flex-wrap gap-2">
-              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md border border-slate-800 bg-slate-900/60 font-mono text-[10.5px] text-slate-400">
-                <Scale className="w-3 h-3 text-emerald-400" />
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md border border-[#2b261f] bg-[#1d1a15] font-mono text-[10.5px] text-[#a29a8d]">
+                <Scale className="w-3 h-3 text-[#d3a05c]" />
                 MIT License
               </span>
-              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md border border-slate-800 bg-slate-900/60 font-mono text-[10.5px] text-slate-400">
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md border border-[#2b261f] bg-[#1d1a15] font-mono text-[10.5px] text-[#a29a8d]">
                 Python 3.12 · 3.13
               </span>
-              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md border border-slate-800 bg-slate-900/60 font-mono text-[10.5px] text-slate-400">
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md border border-[#2b261f] bg-[#1d1a15] font-mono text-[10.5px] text-[#a29a8d]">
                 zero-dep core
               </span>
             </div>
@@ -126,7 +123,7 @@ export function Footer() {
 
           {/* Event tags */}
           <div>
-            <h3 className="font-mono text-[10px] uppercase tracking-widest text-slate-600 mb-4">
+            <h3 className="font-mono text-[10px] uppercase tracking-widest text-[#5c554a] mb-4">
               built for
             </h3>
             <div className="space-y-2.5">
@@ -134,14 +131,14 @@ export function Footer() {
                 href="https://hacktoberfest.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2.5 rounded-lg border border-slate-800 bg-slate-900/40 px-3 py-2.5 hover:border-violet-500/40 transition-colors group"
+                className="flex items-center gap-2.5 rounded-lg border border-[#2b261f] bg-[#1d1a15] px-3 py-2.5 hover:border-[#3a332a] transition-colors group"
               >
                 <span className="text-lg leading-none">🎃</span>
                 <div>
-                  <p className="text-[13px] text-slate-300 group-hover:text-violet-300 transition-colors">
+                  <p className="text-[13px] text-[#cfc9bf] group-hover:text-[#d3a05c] transition-colors">
                     Hacktoberfest 2026
                   </p>
-                  <p className="font-mono text-[10px] text-slate-600">
+                  <p className="font-mono text-[10px] text-[#5c554a]">
                     open-source · october
                   </p>
                 </div>
@@ -150,14 +147,14 @@ export function Footer() {
                 href="https://abhyantriki.in"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2.5 rounded-lg border border-slate-800 bg-slate-900/40 px-3 py-2.5 hover:border-emerald-500/40 transition-colors group"
+                className="flex items-center gap-2.5 rounded-lg border border-[#2b261f] bg-[#1d1a15] px-3 py-2.5 hover:border-[#3a332a] transition-colors group"
               >
                 <span className="text-lg leading-none">⚙️</span>
                 <div>
-                  <p className="text-[13px] text-slate-300 group-hover:text-emerald-300 transition-colors">
+                  <p className="text-[13px] text-[#cfc9bf] group-hover:text-[#d3a05c] transition-colors">
                     Abhyantriki KJSCE 2026
                   </p>
-                  <p className="font-mono text-[10px] text-slate-600">
+                  <p className="font-mono text-[10px] text-[#5c554a]">
                     track 2 · agent skills
                   </p>
                 </div>
@@ -167,7 +164,7 @@ export function Footer() {
 
           {/* Links */}
           <div>
-            <h3 className="font-mono text-[10px] uppercase tracking-widest text-slate-600 mb-4">
+            <h3 className="font-mono text-[10px] uppercase tracking-widest text-[#5c554a] mb-4">
               links
             </h3>
             <ul className="space-y-2.5 text-[13px]">
@@ -176,7 +173,7 @@ export function Footer() {
                   href={GITHUB_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-slate-400 hover:text-emerald-300 transition-colors inline-flex items-center gap-2"
+                  className="text-[#a29a8d] hover:text-[#d3a05c] transition-colors inline-flex items-center gap-2"
                 >
                   <Github className="w-3.5 h-3.5" /> GitHub repository
                 </a>
@@ -186,7 +183,7 @@ export function Footer() {
                   href="https://agentskills.io"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-slate-400 hover:text-emerald-300 transition-colors inline-flex items-center gap-2"
+                  className="text-[#a29a8d] hover:text-[#d3a05c] transition-colors inline-flex items-center gap-2"
                 >
                   <Sparkles className="w-3.5 h-3.5" /> Agent Skills Standard
                 </a>
@@ -196,7 +193,7 @@ export function Footer() {
                   href="https://pypi.org"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-slate-400 hover:text-emerald-300 transition-colors inline-flex items-center gap-2"
+                  className="text-[#a29a8d] hover:text-[#d3a05c] transition-colors inline-flex items-center gap-2"
                 >
                   <Pill className="w-3.5 h-3.5" /> PyPI JSON API
                 </a>
@@ -206,13 +203,13 @@ export function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-12 pt-6 border-t border-slate-800/60 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="font-mono text-[11px] text-slate-600">
+        <div className="mt-12 pt-6 border-t border-[#2b261f] flex flex-col sm:flex-row items-center justify-between gap-3">
+          <p className="font-mono text-[11px] text-[#5c554a]">
             © 2026 Team ShadowGarden — crafted with{" "}
-            <Heart className="w-3 h-3 inline text-rose-500/70" /> for
+            <Heart className="w-3 h-3 inline text-[#c9786b]/70" /> for
             maintainers everywhere
           </p>
-          <p className="font-mono text-[11px] text-slate-700">
+          <p className="font-mono text-[11px] text-[#453f36]">
             H26_ShadowGarden · exit-capsule
           </p>
         </div>

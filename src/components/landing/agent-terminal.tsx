@@ -14,36 +14,28 @@ interface Step {
 }
 
 const STEPS: Step[] = [
+  { action: "Cloning target repo", detail: "isair/jarvis", duration: 700 },
   {
     action: "Parsing manifests",
     detail: "requirements.txt · pyproject.toml",
     duration: 750,
   },
   {
-    action: "Mapping AST import sites",
-    detail: "148 .py files · 45 packages",
-    duration: 980,
-  },
-  {
-    action: "Querying live PyPI JSON API",
-    detail: "45/45 metadata resolved",
-    duration: 900,
-  },
-  {
-    action: "Spinning isolated sandbox",
-    detail: "/tmp/exit-capsule-sbx-7f3a",
-    duration: 820,
-  },
-  {
-    action: "Running pytest verification",
-    detail: "baseline skipped — needs display/audio hw",
+    action: "PyPI API + AST import map",
+    detail: "148 files · 45 packages",
     duration: 950,
+  },
+  { action: "Risk scoring", detail: "12 flagged at-risk", duration: 650 },
+  {
+    action: "Sandbox: install deps + pytest -v",
+    detail: "baseline skipped — needs display/audio hw",
+    duration: 900,
     skipped: true,
   },
   {
-    action: "Composing exit capsule",
-    detail: "DEPENDENCY_EXIT_CAPSULE.md",
-    duration: 700,
+    action: "Composing capsule",
+    detail: "EXIT_CAPSULE.md",
+    duration: 650,
   },
 ];
 
@@ -58,17 +50,6 @@ export function AgentTerminal() {
   const [finished, setFinished] = useState(false);
   const [cycle, setCycle] = useState(0);
   const bodyRef = useRef<HTMLDivElement>(null);
-  const timeoutsRef = useRef<ReturnType<typeof setTimeout>[]>([]);
-
-  const reset = useCallback(() => {
-    timeoutsRef.current.forEach(clearTimeout);
-    timeoutsRef.current = [];
-    setTyped(0);
-    setStepIdx(0);
-    setStepStates(STEPS.map(() => "pending"));
-    setFinished(false);
-    setCycle((c) => c + 1);
-  }, []);
 
   useEffect(() => {
     let cancelled = false;
@@ -142,54 +123,50 @@ export function AgentTerminal() {
   );
 
   return (
-    <div className="glass-panel rounded-xl overflow-hidden shadow-[0_24px_80px_-24px_rgba(16,185,129,0.25)]">
+    <div className="panel-solid rounded-xl overflow-hidden">
       {/* Title bar */}
-      <div className="flex items-center justify-between px-4 py-2.5 border-b border-slate-800/80 bg-slate-950/60">
+      <div className="flex items-center justify-between px-4 py-2.5 border-b border-[#2b261f] bg-[#161310]">
         <div className="flex items-center gap-3">
           <div className="flex items-center gap-1.5">
-            <span className="w-2.5 h-2.5 rounded-full bg-rose-500/80" />
-            <span className="w-2.5 h-2.5 rounded-full bg-amber-400/80" />
-            <span className="w-2.5 h-2.5 rounded-full bg-emerald-500/80" />
+            <span className="w-2.5 h-2.5 rounded-full bg-[#a8625a]" />
+            <span className="w-2.5 h-2.5 rounded-full bg-[#c99a4e]" />
+            <span className="w-2.5 h-2.5 rounded-full bg-[#7e9a78]" />
           </div>
-          <div className="flex items-center gap-2 text-[11px] font-mono text-slate-500">
+          <div className="flex items-center gap-2 text-[11px] font-mono text-[#7a7367]">
             <Terminal className="w-3.5 h-3.5" />
-            <span className="hidden sm:inline">agent-session</span>
-            <span className="text-slate-700">·</span>
-            <span className="text-emerald-500/90">zsh</span>
+            <span className="hidden sm:inline">run_capsule</span>
+            <span className="text-[#453f36]">·</span>
+            <span>zsh</span>
           </div>
         </div>
-        <div className="flex items-center gap-2">
-          <span
-            className={`font-mono text-[10px] tracking-wider uppercase ${
-              finished ? "text-emerald-400" : "text-sky-400"
-            }`}
-          >
-            {finished ? "capsule ready" : `run ${progress}%`}
-          </span>
-          <span className="live-dot w-1.5 h-1.5 rounded-full bg-emerald-500" />
-        </div>
+        <span
+          className={`font-mono text-[10px] tracking-wider uppercase ${
+            finished ? "text-[#93ab8d]" : "text-[#d3a05c]"
+          }`}
+        >
+          {finished ? "capsule ready" : `run ${progress}%`}
+        </span>
       </div>
 
       {/* Body */}
       <div
         ref={bodyRef}
-        className="terminal-scroll relative h-[340px] sm:h-[380px] overflow-y-auto px-4 sm:px-5 py-4 font-mono text-[12px] sm:text-[13px] leading-relaxed"
-        aria-label="Animated terminal demo of the Dependency Exit Capsule agent"
+        className="terminal-scroll relative h-[340px] sm:h-[380px] overflow-y-auto px-4 sm:px-5 py-4 font-mono text-[12px] sm:text-[13px] leading-relaxed bg-[#12100d]"
+        aria-label="Animated terminal demo of the exit-capsule agent"
       >
-        <div className="scanline" />
         {/* Prompt + typed command */}
         <div className="flex items-start gap-2 mb-4">
-          <span className="text-violet-400 shrink-0 select-none">➜</span>
-          <span className="text-sky-400 shrink-0 select-none hidden sm:inline">
-            ~/ShadowGarden
+          <span className="text-[#d3a05c] shrink-0 select-none">➜</span>
+          <span className="text-[#93a6bd] shrink-0 select-none hidden sm:inline">
+            ~/jarvis
           </span>
-          <span className="text-slate-600 shrink-0 select-none hidden sm:inline">
+          <span className="text-[#5c554a] shrink-0 select-none hidden sm:inline">
             $
           </span>
-          <span className="text-slate-200 break-all">
+          <span className="text-[#e9e4da] break-all">
             {SKILL_INVOCATION.slice(0, typed)}
             {typed < SKILL_INVOCATION.length || (!finished && stepIdx === 0) ? (
-              <span className="cursor-blink text-emerald-400">▋</span>
+              <span className="cursor-blink text-[#d3a05c]">▋</span>
             ) : null}
           </span>
         </div>
@@ -206,28 +183,28 @@ export function AgentTerminal() {
                 >
                   <span className="shrink-0 w-4 flex justify-center mt-0.5">
                     {state === "running" ? (
-                      <span className="inline-block w-3 h-3 border-[1.5px] border-sky-400/70 border-t-transparent rounded-full animate-spin" />
+                      <span className="inline-block w-3 h-3 border-[1.5px] border-[#93a6bd]/70 border-t-transparent rounded-full animate-spin" />
                     ) : state === "skipped" ? (
-                      <Minus className="w-3.5 h-3.5 text-amber-400" />
+                      <Minus className="w-3.5 h-3.5 text-[#c99a4e]" />
                     ) : (
-                      <Check className="w-3.5 h-3.5 text-emerald-400" />
+                      <Check className="w-3.5 h-3.5 text-[#93ab8d]" />
                     )}
                   </span>
                   <span
                     className={
-                      state === "pending"
-                        ? "text-slate-500"
-                        : "text-slate-300"
+                      state === "pending" ? "text-[#7a7367]" : "text-[#cfc9bf]"
                     }
                   >
                     {step.action}
-                    <span className="text-slate-600"> … </span>
+                    <span className="text-[#5c554a]"> … </span>
                     {state === "running" ? (
-                      <span className="text-sky-400/80">streaming</span>
+                      <span className="text-[#93a6bd]/80">streaming</span>
                     ) : (
                       <span
                         className={
-                          state === "skipped" ? "text-amber-300/90" : "text-emerald-300/90"
+                          state === "skipped"
+                            ? "text-[#c99a4e]"
+                            : "text-[#93ab8d]"
                         }
                       >
                         {step.detail}
@@ -244,17 +221,16 @@ export function AgentTerminal() {
         {finished && (
           <div className="mt-5 animate-in fade-in duration-500">
             <div className="flex items-center gap-2.5">
-              <span className="text-emerald-400">✓</span>
-              <span className="text-slate-200">
+              <span className="text-[#93ab8d]">✓</span>
+              <span className="text-[#e9e4da]">
                 Done — capsule written for{" "}
-                <span className="text-sky-300">isair/jarvis</span>
+                <span className="text-[#93a6bd]">isair/jarvis</span>
               </span>
             </div>
-            <div className="mt-1.5 pl-6 text-slate-500">
-              <span className="text-emerald-400 font-semibold">45</span>{" "}
-              dependencies scanned ·{" "}
-              <span className="text-rose-400 font-semibold">12</span> at-risk ·{" "}
-              <span className="text-violet-300">0</span> unverified claims
+            <div className="mt-1.5 pl-6 text-[#7a7367]">
+              <span className="text-[#93ab8d]">45</span> dependencies scanned
+              · <span className="text-[#c9786b]">12</span> at-risk ·{" "}
+              <span className="text-[#ad90a5]">0</span> unverified claims
             </div>
           </div>
         )}
@@ -262,19 +238,19 @@ export function AgentTerminal() {
         {/* Idle cursor at bottom */}
         {finished && (
           <div className="flex items-center gap-2 mt-4">
-            <span className="text-violet-400 select-none">➜</span>
-            <span className="cursor-blink text-emerald-400">▋</span>
+            <span className="text-[#d3a05c] select-none">➜</span>
+            <span className="cursor-blink text-[#d3a05c]">▋</span>
           </div>
         )}
       </div>
 
       {/* Status footer */}
-      <div className="flex items-center justify-between px-4 py-2 border-t border-slate-800/80 bg-slate-950/60 text-[10px] font-mono text-slate-600">
+      <div className="flex items-center justify-between px-4 py-2 border-t border-[#2b261f] bg-[#161310] text-[10px] font-mono text-[#5c554a]">
         <span>
-          skill: <span className="text-emerald-500/90">dependency-exit-capsule</span>
+          skill: <span className="text-[#a29a8d]">exit-capsule</span>
         </span>
         <span className="hidden sm:inline">
-          guardrails: <span className="text-emerald-500/90">ENFORCED</span>
+          guardrails: <span className="text-[#93ab8d]">enforced</span>
         </span>
       </div>
     </div>

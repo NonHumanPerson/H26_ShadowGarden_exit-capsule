@@ -6,7 +6,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-sans);
+  --font-sans: var(--font-body);
+  --font-serif: var(--font-display);
   --font-mono: var(--font-mono);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
@@ -36,55 +37,54 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-
-  /* Neon accents */
-  --color-neon-emerald: #10b981;
-  --color-neon-blue: #3b82f6;
-  --color-neon-purple: #8b5cf6;
-  --color-abyss: #090d16;
 }
 
+/*
+  Warm editorial dark palette — paper-on-charcoal, single amber accent.
+  Status hues are deliberately desaturated: sage (pass), terracotta (risk),
+  steel (info), mauve (AI proposals).
+*/
 :root {
-  --radius: 0.625rem;
-  --background: #090d16;
-  --foreground: #e6edf6;
-  --card: #0d1320;
-  --card-foreground: #e6edf6;
-  --popover: #0d1320;
-  --popover-foreground: #e6edf6;
-  --primary: #10b981;
-  --primary-foreground: #052018;
-  --secondary: #131a2a;
-  --secondary-foreground: #e6edf6;
-  --muted: #131a2a;
-  --muted-foreground: #8b96ab;
-  --accent: #16bff3;
-  --accent-foreground: #051525;
-  --destructive: #f43f5e;
-  --border: rgba(148, 163, 184, 0.12);
-  --input: rgba(148, 163, 184, 0.16);
-  --ring: rgba(16, 185, 129, 0.5);
+  --radius: 0.5rem;
+  --background: #141210;
+  --foreground: #e9e4da;
+  --card: #1a1713;
+  --card-foreground: #e9e4da;
+  --popover: #1a1713;
+  --popover-foreground: #e9e4da;
+  --primary: #d3a05c;
+  --primary-foreground: #21190f;
+  --secondary: #211d18;
+  --secondary-foreground: #e9e4da;
+  --muted: #211d18;
+  --muted-foreground: #a29a8d;
+  --accent: #d3a05c;
+  --accent-foreground: #21190f;
+  --destructive: #c9786b;
+  --border: rgba(233, 228, 218, 0.09);
+  --input: rgba(233, 228, 218, 0.13);
+  --ring: rgba(211, 160, 92, 0.4);
 }
 
 .dark {
-  --background: #090d16;
-  --foreground: #e6edf6;
-  --card: #0d1320;
-  --card-foreground: #e6edf6;
-  --popover: #0d1320;
-  --popover-foreground: #e6edf6;
-  --primary: #10b981;
-  --primary-foreground: #052018;
-  --secondary: #131a2a;
-  --secondary-foreground: #e6edf6;
-  --muted: #131a2a;
-  --muted-foreground: #8b96ab;
-  --accent: #16bff3;
-  --accent-foreground: #051525;
-  --destructive: #f43f5e;
-  --border: rgba(148, 163, 184, 0.12);
-  --input: rgba(148, 163, 184, 0.16);
-  --ring: rgba(16, 185, 129, 0.5);
+  --background: #141210;
+  --foreground: #e9e4da;
+  --card: #1a1713;
+  --card-foreground: #e9e4da;
+  --popover: #1a1713;
+  --popover-foreground: #e9e4da;
+  --primary: #d3a05c;
+  --primary-foreground: #21190f;
+  --secondary: #211d18;
+  --secondary-foreground: #e9e4da;
+  --muted: #211d18;
+  --muted-foreground: #a29a8d;
+  --accent: #d3a05c;
+  --accent-foreground: #21190f;
+  --destructive: #c9786b;
+  --border: rgba(233, 228, 218, 0.09);
+  --input: rgba(233, 228, 218, 0.13);
+  --ring: rgba(211, 160, 92, 0.4);
 }
 
 @layer base {
@@ -95,77 +95,39 @@
     @apply bg-background text-foreground;
   }
   ::selection {
-    background: rgba(16, 185, 129, 0.28);
-    color: #eafff6;
+    background: rgba(211, 160, 92, 0.26);
+    color: #f5efe4;
   }
 }
 
-/* ---------- Custom landing page utilities ---------- */
+/* ---------- Landing page utilities (restrained, no glow) ---------- */
 
-/* Blueprint grid backdrop */
-.grid-backdrop {
+/* Faint blueprint grid — hero only */
+.paper-grid {
   background-image:
-    linear-gradient(rgba(148, 163, 184, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(148, 163, 184, 0.05) 1px, transparent 1px);
-  background-size: 44px 44px;
+    linear-gradient(rgba(233, 228, 218, 0.028) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(233, 228, 218, 0.028) 1px, transparent 1px);
+  background-size: 48px 48px;
 }
 
-.dot-backdrop {
-  background-image: radial-gradient(rgba(148, 163, 184, 0.14) 1px, transparent 1px);
-  background-size: 22px 22px;
+/* Quiet panel */
+.panel {
+  background: rgba(26, 23, 19, 0.72);
+  border: 1px solid rgba(233, 228, 218, 0.09);
 }
 
-/* Glassmorphic panel */
-.glass-panel {
-  background: linear-gradient(160deg, rgba(19, 26, 42, 0.72), rgba(9, 13, 22, 0.86));
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border: 1px solid rgba(148, 163, 184, 0.14);
+.panel-solid {
+  background: #1a1713;
+  border: 1px solid rgba(233, 228, 218, 0.09);
 }
 
-/* HUD corner brackets */
-.hud-corners {
-  position: relative;
+/* Subtle hover — border warms up, no shadows */
+.card-hover {
+  transition: border-color 0.3s ease, background-color 0.3s ease;
 }
-.hud-corners::before,
-.hud-corners::after {
-  content: "";
-  position: absolute;
-  width: 14px;
-  height: 14px;
-  pointer-events: none;
-  opacity: 0.9;
-}
-.hud-corners::before {
-  top: -1px;
-  left: -1px;
-  border-top: 1.5px solid rgba(16, 185, 129, 0.7);
-  border-left: 1.5px solid rgba(16, 185, 129, 0.7);
-}
-.hud-corners::after {
-  bottom: -1px;
-  right: -1px;
-  border-bottom: 1.5px solid rgba(16, 185, 129, 0.7);
-  border-right: 1.5px solid rgba(16, 185, 129, 0.7);
-}
-
-/* Glow ring on hover */
-.glow-hover {
-  transition: box-shadow 0.35s ease, border-color 0.35s ease, transform 0.35s ease;
-}
-.glow-hover:hover {
-  border-color: rgba(16, 185, 129, 0.45);
-  box-shadow:
-    0 0 0 1px rgba(16, 185, 129, 0.18),
-    0 0 34px -6px rgba(16, 185, 129, 0.32);
-}
-
-/* Gradient text */
-.text-gradient-neon {
-  background: linear-gradient(94deg, #10b981 8%, #38bdf8 52%, #8b5cf6 96%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+.card-hover:hover {
+  border-color: rgba(211, 160, 92, 0.32);
+  background: rgba(30, 26, 21, 0.85);
 }
 
 /* Blinking terminal cursor */
@@ -183,73 +145,6 @@
   }
 }
 
-/* Scanline sweep across terminal */
-.scanline {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  overflow: hidden;
-}
-.scanline::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 88px;
-  background: linear-gradient(
-    180deg,
-    transparent 0%,
-    rgba(16, 185, 129, 0.045) 42%,
-    rgba(16, 185, 129, 0.09) 50%,
-    rgba(16, 185, 129, 0.045) 58%,
-    transparent 100%
-  );
-  animation: scanline-sweep 6.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
-}
-@keyframes scanline-sweep {
-  0% {
-    transform: translateY(-110px);
-  }
-  55%,
-  100% {
-    transform: translateY(720px);
-  }
-}
-
-/* Pulsing live dot */
-.live-dot {
-  animation: live-dot 1.8s ease-in-out infinite;
-}
-@keyframes live-dot {
-  0%,
-  100% {
-    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.55);
-    opacity: 1;
-  }
-  50% {
-    box-shadow: 0 0 0 6px rgba(16, 185, 129, 0);
-    opacity: 0.65;
-  }
-}
-
-/* Slow float for hero glow orbs */
-.float-slow {
-  animation: float-slow 9s ease-in-out infinite;
-}
-.float-slower {
-  animation: float-slow 13s ease-in-out infinite reverse;
-}
-@keyframes float-slow {
-  0%,
-  100% {
-    transform: translate3d(0, 0, 0) scale(1);
-  }
-  50% {
-    transform: translate3d(0, -26px, 0) scale(1.06);
-  }
-}
-
 /* Terminal scrollbar */
 .terminal-scroll::-webkit-scrollbar {
   width: 6px;
@@ -259,18 +154,18 @@
   background: transparent;
 }
 .terminal-scroll::-webkit-scrollbar-thumb {
-  background: rgba(16, 185, 129, 0.28);
+  background: rgba(162, 154, 141, 0.25);
   border-radius: 999px;
 }
 .terminal-scroll::-webkit-scrollbar-thumb:hover {
-  background: rgba(16, 185, 129, 0.45);
+  background: rgba(211, 160, 92, 0.35);
 }
 .terminal-scroll {
   scrollbar-width: thin;
-  scrollbar-color: rgba(16, 185, 129, 0.28) transparent;
+  scrollbar-color: rgba(162, 154, 141, 0.25) transparent;
 }
 
-/* Marquee for portability strip */
+/* Quiet marquee */
 @keyframes marquee-x {
   from {
     transform: translateX(0);
@@ -280,7 +175,7 @@
   }
 }
 .marquee-track {
-  animation: marquee-x 30s linear infinite;
+  animation: marquee-x 38s linear infinite;
 }
 .marquee-track:hover {
   animation-play-state: paused;
@@ -289,10 +184,6 @@
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   .cursor-blink,
-  .scanline::after,
-  .live-dot,
-  .float-slow,
-  .float-slower,
   .marquee-track {
     animation: none;
   }

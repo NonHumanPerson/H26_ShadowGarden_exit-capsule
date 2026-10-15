@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Github, Menu, X, Pill } from "lucide-react";
+import { Github, Menu, Pill, X } from "lucide-react";
 import { GITHUB_URL, NAV_SECTIONS } from "./constants";
 
 export function Navbar() {
@@ -19,21 +19,18 @@ export function Navbar() {
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-[#090d16]/85 backdrop-blur-xl border-b border-slate-800/70"
+          ? "bg-[#141210]/90 backdrop-blur-md border-b border-[#2b261f]"
           : "bg-transparent border-b border-transparent"
       }`}
     >
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <a href="#top" className="flex items-center gap-2.5 group">
-          <span className="relative flex items-center justify-center w-8 h-8 rounded-lg border border-emerald-500/40 bg-emerald-500/10">
-            <Pill className="w-4 h-4 text-emerald-400" />
-            <span className="absolute -top-0.5 -right-0.5 w-2 h-2 rounded-full bg-emerald-400 live-dot" />
+          <span className="flex items-center justify-center w-8 h-8 rounded-lg border border-[#3a2f1f] bg-[#221c12]">
+            <Pill className="w-4 h-4 text-[#d3a05c]" />
           </span>
-          <span className="font-mono text-sm text-slate-200 tracking-tight">
-            dependency<span className="text-emerald-400">.exit</span>
-            <span className="text-slate-600">/</span>
-            <span className="text-slate-400">capsule</span>
+          <span className="font-mono text-sm text-[#e9e4da] tracking-tight">
+            exit<span className="text-[#d3a05c]">-capsule</span>
           </span>
         </a>
 
@@ -43,7 +40,7 @@ export function Navbar() {
             <a
               key={item.href}
               href={item.href}
-              className="px-3 py-1.5 text-sm text-slate-400 hover:text-slate-100 rounded-md hover:bg-slate-800/60 transition-colors"
+              className="px-3 py-1.5 text-sm text-[#a29a8d] hover:text-[#e9e4da] rounded-md hover:bg-[#211d18] transition-colors"
             >
               {item.label}
             </a>
@@ -52,7 +49,7 @@ export function Navbar() {
             href={GITHUB_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="ml-3 inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium text-slate-200 border border-slate-700 bg-slate-800/50 hover:border-emerald-500/50 hover:bg-emerald-500/10 hover:text-emerald-300 transition-all"
+            className="ml-3 inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium text-[#e9e4da] border border-[#2b261f] bg-[#1d1a15] hover:border-[#4a3f2d] transition-colors"
           >
             <Github className="w-4 h-4" />
             GitHub
@@ -62,7 +59,7 @@ export function Navbar() {
         {/* Mobile toggle */}
         <button
           onClick={() => setOpen(!open)}
-          className="md:hidden p-2 text-slate-400 hover:text-slate-100"
+          className="md:hidden p-2 text-[#a29a8d] hover:text-[#e9e4da]"
           aria-label={open ? "Close menu" : "Open menu"}
         >
           {open ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -71,14 +68,14 @@ export function Navbar() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden border-t border-slate-800/70 bg-[#090d16]/95 backdrop-blur-xl">
+        <div className="md:hidden border-t border-[#2b261f] bg-[#141210]/95 backdrop-blur-md">
           <div className="px-4 py-3 flex flex-col gap-1">
             {NAV_SECTIONS.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className="px-3 py-2.5 text-sm text-slate-300 hover:bg-slate-800/60 rounded-md"
+                className="px-3 py-2.5 text-sm text-[#cfc9bf] hover:bg-[#211d18] rounded-md"
               >
                 {item.label}
               </a>
@@ -87,7 +84,7 @@ export function Navbar() {
               href={GITHUB_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-1 inline-flex items-center gap-2 px-3 py-2.5 text-sm text-emerald-300 hover:bg-emerald-500/10 rounded-md"
+              className="mt-1 inline-flex items-center gap-2 px-3 py-2.5 text-sm text-[#d3a05c] hover:bg-[#211d18] rounded-md"
             >
               <Github className="w-4 h-4" /> View on GitHub
             </a>
