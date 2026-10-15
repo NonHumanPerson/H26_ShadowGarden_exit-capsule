@@ -1,0 +1,4002 @@
+{
+  "scan_timestamp": "2026-10-15T09:16:39.196269+00:00",
+  "dependencies": [
+    {
+      "package": "pygame",
+      "latest_version": "2.6.1",
+      "last_release_date": "2024-09-29",
+      "days_since_last_release": 745,
+      "requires_python": ">=3.6",
+      "is_at_risk": true,
+      "risk_indicators": [
+        "No release in 745 days (Last: 2024-09-29)",
+        "Marked Inactive in PyPI classifiers"
+      ],
+      "usage_locations": [
+        {
+          "file": "src\\jarvis\\output\\tts.py",
+          "line": 556,
+          "statement": "import pygame"
+        }
+      ]
+    },
+    {
+      "package": "html2text",
+      "latest_version": "2025.4.15",
+      "last_release_date": "2025-04-15",
+      "days_since_last_release": 548,
+      "requires_python": ">=3.9",
+      "is_at_risk": true,
+      "risk_indicators": [
+        "No release in 548 days (Last: 2025-04-15)"
+      ],
+      "usage_locations": []
+    },
+    {
+      "package": "sounddevice",
+      "latest_version": "0.5.6",
+      "last_release_date": "2026-08-17",
+      "days_since_last_release": 59,
+      "requires_python": ">=3.7",
+      "is_at_risk": false,
+      "risk_indicators": [],
+      "usage_locations": [
+        {
+          "file": "src\\desktop_app\\settings_window.py",
+          "line": 397,
+          "statement": "import sounddevice"
+        },
+        {
+          "file": "src\\jarvis\\dictation\\dictation_engine.py",
+          "line": 32,
+          "statement": "import sounddevice"
+        },
+        {
+          "file": "src\\jarvis\\listening\\listener.py",
+          "line": 97,
+          "statement": "import sounddevice"
+        },
+        {
+          "file": "src\\jarvis\\output\\tts.py",
+          "line": 873,
+          "statement": "import sounddevice"
+        },
+        {
+          "file": "src\\jarvis\\output\\tune_player.py",
+          "line": 171,
+          "statement": "import sounddevice"
+        },
+        {
+          "file": "tests\\conftest.py",
+          "line": 342,
+          "statement": "import sounddevice"
+        },
+        {
+          "file": "tests\\test_dictation.py",
+          "line": 150,
+          "statement": "import sounddevice"
+        }
+      ]
+    },
+    {
+      "package": "Pillow",
+      "latest_version": "12.3.0",
+      "last_release_date": "2026-07-01",
+      "days_since_last_release": 105,
+      "requires_python": ">=3.10",
+      "is_at_risk": true,
+      "risk_indicators": [
+        "Marked Inactive in PyPI classifiers"
+      ],
+      "usage_locations": []
+    },
+    {
+      "package": "playwright",
+      "latest_version": "1.64.0",
+      "last_release_date": "2026-10-13",
+      "days_since_last_release": 1,
+      "requires_python": ">=3.10",
+      "is_at_risk": false,
+      "risk_indicators": [],
+      "usage_locations": []
+    },
+    {
+      "package": "faster-whisper",
+      "latest_version": "1.2.1",
+      "last_release_date": "2025-10-31",
+      "days_since_last_release": 348,
+      "requires_python": ">=3.9",
+      "is_at_risk": false,
+      "risk_indicators": [],
+      "usage_locations": [
+        {
+          "file": "evals\\test_local_whisper_runtime.py",
+          "line": 51,
+          "statement": "from faster_whisper import WhisperModel"
+        },
+        {
+          "file": "evals\\test_local_whisper_runtime.py",
+          "line": 71,
+          "statement": "from faster_whisper.vad import get_speech_timestamps"
+        },
+        {
+          "file": "evals\\test_local_whisper_runtime.py",
+          "line": 79,
+          "statement": "from faster_whisper.vad import get_speech_timestamps"
+        },
+        {
+          "file": "src\\jarvis\\listening\\listener.py",
+          "line": 310,
+          "statement": "from faster_whisper import WhisperModel"
+        },
+        {
+          "file": "src\\jarvis\\listening\\model_download.py",
+          "line": 181,
+          "statement": "from faster_whisper.utils import download_model"
+        },
+        {
+          "file": "src\\jarvis\\listening\\model_download.py",
+          "line": 105,
+          "statement": "from faster_whisper.utils import download_model"
+        },
+        {
+          "file": "src\\jarvis\\listening\\whisper_capabilities.py",
+          "line": 9,
+          "statement": "import faster_whisper"
+        },
+        {
+          "file": "tests\\test_whisper_pre_download.py",
+          "line": 46,
+          "statement": "import faster_whisper.utils"
+        },
+        {
+          "file": "tests\\test_whisper_pre_download.py",
+          "line": 55,
+          "statement": "import faster_whisper.utils"
+        },
+        {
+          "file": "tests\\test_whisper_pre_download.py",
+          "line": 170,
+          "statement": "import faster_whisper.utils"
+        },
+        {
+          "file": "tests\\test_whisper_pre_download.py",
+          "line": 292,
+          "statement": "from faster_whisper.utils import _MODELS"
+        },
+        {
+          "file": "tests\\fixtures\\faster_whisper_bundle_probe.py",
+          "line": 3,
+          "statement": "from faster_whisper import available_models"
+        },
+        {
+          "file": "tests\\fixtures\\faster_whisper_bundle_probe.py",
+          "line": 4,
+          "statement": "from faster_whisper.vad import get_speech_timestamps"
+        }
+      ]
+    },
+    {
+      "package": "webrtcvad",
+      "latest_version": "2.0.10",
+      "last_release_date": "2017-01-07",
+      "days_since_last_release": 3567,
+      "requires_python": "",
+      "is_at_risk": true,
+      "risk_indicators": [
+        "No release in 3567 days (Last: 2017-01-07)",
+        "Missing explicit Python version constraints (requires_python)"
+      ],
+      "usage_locations": [
+        {
+          "file": "src\\jarvis\\listening\\listener.py",
+          "line": 118,
+          "statement": "import webrtcvad"
+        }
+      ]
+    },
+    {
+      "package": "pytesseract",
+      "latest_version": "0.3.13",
+      "last_release_date": "2024-08-16",
+      "days_since_last_release": 790,
+      "requires_python": ">=3.8",
+      "is_at_risk": true,
+      "risk_indicators": [
+        "No release in 790 days (Last: 2024-08-16)"
+      ],
+      "usage_locations": [
+        {
+          "file": "src\\jarvis\\tools\\builtin\\screenshot.py",
+          "line": 51,
+          "statement": "import pytesseract"
+        }
+      ]
+    },
+    {
+      "package": "pyinstaller",
+      "latest_version": "6.22.3",
+      "last_release_date": "2026-09-12",
+      "days_since_last_release": 32,
+      "requires_python": "<3.16,>=3.8",
+      "is_at_risk": true,
+      "risk_indicators": [
+        "Marked Inactive in PyPI classifiers"
+      ],
+      "usage_locations": [
+        {
+          "file": "installer\\mlx_bundle.py",
+          "line": 12,
+          "statement": "from PyInstaller.utils.hooks import collect_data_files, collect_dynamic_libs, collect_submodules"
+        },
+        {
+          "file": "installer\\hooks\\hook-curl_cffi.py",
+          "line": 2,
+          "statement": "from PyInstaller.utils.hooks import collect_all"
+        },
+        {
+          "file": "installer\\hooks\\hook-faster_whisper.py",
+          "line": 2,
+          "statement": "from PyInstaller.utils.hooks import collect_data_files"
+        }
+      ]
+    },
+    {
+      "package": "mcp",
+      "latest_version": "2.3.0",
+      "last_release_date": "2026-10-02",
+      "days_since_last_release": 12,
+      "requires_python": ">=3.10",
+      "is_at_risk": false,
+      "risk_indicators": [],
+      "usage_locations": [
+        {
+          "file": "src\\jarvis\\tools\\external\\mcp_client.py",
+          "line": 9,
+          "statement": "from mcp import ClientSession"
+        },
+        {
+          "file": "src\\jarvis\\tools\\external\\mcp_client.py",
+          "line": 10,
+          "statement": "from mcp.client.stdio import stdio_client, StdioServerParameters"
+        },
+        {
+          "file": "tests\\test_mcp_client.py",
+          "line": 650,
+          "statement": "from mcp.types import TextContent"
+        },
+        {
+          "file": "tests\\test_mcp_client.py",
+          "line": 657,
+          "statement": "from mcp.types import TextContent"
+        },
+        {
+          "file": "tests\\test_mcp_client.py",
+          "line": 677,
+          "statement": "from mcp.types import TextContent"
+        }
+      ]
+    },
+    {
+      "package": "mlx-whisper",
+      "latest_version": "0.4.3",
+      "last_release_date": "2025-08-29",
+      "days_since_last_release": 411,
+      "requires_python": ">=3.8",
+      "is_at_risk": true,
+      "risk_indicators": [
+        "No release in 411 days (Last: 2025-08-29)"
+      ],
+      "usage_locations": [
+        {
+          "file": "evals\\test_whisper_audio_evidence.py",
+          "line": 103,
+          "statement": "import mlx_whisper"
+        },
+        {
+          "file": "src\\desktop_app\\setup_wizard.py",
+          "line": 64,
+          "statement": "import mlx_whisper"
+        },
+        {
+          "file": "src\\jarvis\\dictation\\dictation_engine.py",
+          "line": 1190,
+          "statement": "import mlx_whisper"
+        },
+        {
+          "file": "src\\jarvis\\listening\\listener.py",
+          "line": 301,
+          "statement": "import mlx_whisper"
+        },
+        {
+          "file": "tests\\fixtures\\mlx_bundle_probe.py",
+          "line": 2,
+          "statement": "import mlx_whisper"
+        },
+        {
+          "file": "tests\\fixtures\\mlx_bundle_probe.py",
+          "line": 4,
+          "statement": "from mlx_whisper.tokenizer import get_tokenizer"
+        },
+        {
+          "file": "tests\\fixtures\\mlx_bundle_probe.py",
+          "line": 5,
+          "statement": "from mlx_whisper.timing import dtw_cpu"
+        }
+      ]
+    },
+    {
+      "package": "beautifulsoup4",
+      "latest_version": "4.15.0",
+      "last_release_date": "2026-06-07",
+      "days_since_last_release": 129,
+      "requires_python": ">=3.7.0",
+      "is_at_risk": false,
+      "risk_indicators": [],
+      "usage_locations": []
+    },
+    {
+      "package": "urllib3",
+      "latest_version": "2.8.0",
+      "last_release_date": "2026-09-15",
+      "days_since_last_release": 29,
+      "requires_python": ">=3.10",
+      "is_at_risk": false,
+      "risk_indicators": [],
+      "usage_locations": [
+        {
+          "file": "src\\jarvis\\listening\\model_download.py",
+          "line": 54,
+          "statement": "from urllib3.exceptions import NewConnectionError, ProtocolError, SSLError, TimeoutError"
+        },
+        {
+          "file": "src\\jarvis\\llm\\errors.py",
+          "line": 4,
+          "statement": "from urllib3.exceptions import ReadTimeoutError"
+        },
+        {
+          "file": "tests\\test_llm_timeout_diagnostics.py",
+          "line": 8,
+          "statement": "from urllib3.exceptions import ReadTimeoutError"
+        },
+        {
+          "file": "tests\\test_llm_timeout_diagnostics.py",
+          "line": 72,
+          "statement": "from urllib3.exceptions import NewConnectionError"
+        },
+        {
+          "file": "tests\\test_whisper_network_failures.py",
+          "line": 8,
+          "statement": "from urllib3.exceptions import MaxRetryError, ProtocolError, SSLError"
+        }
+      ]
+    },
+    {
+      "package": "PyQt6-WebEngine",
+      "latest_version": "6.11.0",
+      "last_release_date": "2026-03-30",
+      "days_since_last_release": 198,
+      "requires_python": ">=3.10",
+      "is_at_risk": false,
+      "risk_indicators": [],
+      "usage_locations": []
+    },
+    {
+      "package": "python-dotenv",
+      "latest_version": "1.2.4",
+      "last_release_date": "2026-10-01",
+      "days_since_last_release": 14,
+      "requires_python": ">=3.10",
+      "is_at_risk": false,
+      "risk_indicators": [],
+      "usage_locations": []
+    },
+    {
+      "package": "setuptools",
+      "latest_version": "84.0.0",
+      "last_release_date": "2026-08-08",
+      "days_since_last_release": 67,
+      "requires_python": ">=3.10",
+      "is_at_risk": false,
+      "risk_indicators": [],
+      "usage_locations": []
+    },
+    {
+      "package": "filelock",
+      "latest_version": "4.2.0",
+      "last_release_date": "2026-10-14",
+      "days_since_last_release": 0,
+      "requires_python": ">=3.11",
+      "is_at_risk": false,
+      "risk_indicators": [],
+      "usage_locations": [
+        {
+          "file": "src\\jarvis\\dictation\\history.py",
+          "line": 19,
+          "statement": "from filelock import FileLock"
+        },
+        {
+          "file": "tests\\test_dictation_history.py",
+          "line": 429,
+          "statement": "from filelock import FileLock"
+        },
+        {
+          "file": "tests\\test_dictation_history.py",
+          "line": 310,
+          "statement": "from filelock import FileLock"
+        },
+        {
+          "file": "tests\\test_dictation_history_writers.py",
+          "line": 69,
+          "statement": "from filelock import FileLock"
+        }
+      ]
+    },
+    {
+      "package": "flask",
+      "latest_version": "3.1.3",
+      "last_release_date": "2026-02-19",
+      "days_since_last_release": 238,
+      "requires_python": ">=3.9",
+      "is_at_risk": false,
+      "risk_indicators": [],
+      "usage_locations": [
+        {
+          "file": "src\\desktop_app\\memory_viewer.py",
+          "line": 16,
+          "statement": "from flask import Flask, jsonify, request, Response"
+        },
+        {
+          "file": "tests\\test_diary_import.py",
+          "line": 91,
+          "statement": "import flask"
+        },
+        {
+          "file": "tests\\test_memory_viewer_diary_optimise_api.py",
+          "line": 23,
+          "statement": "import flask"
+        },
+        {
+          "file": "tests\\test_memory_viewer_diary_scrub_api.py",
+          "line": 23,
+          "statement": "import flask"
+        },
+        {
+          "file": "tests\\test_memory_viewer_graph_api.py",
+          "line": 8,
+          "statement": "import flask"
+        }
+      ]
+    },
+    {
+      "package": "pynput",
+      "latest_version": "1.8.2",
+      "last_release_date": "2026-05-12",
+      "days_since_last_release": 155,
+      "requires_python": null,
+      "is_at_risk": true,
+      "risk_indicators": [
+        "Missing explicit Python version constraints (requires_python)"
+      ],
+      "usage_locations": [
+        {
+          "file": "src\\jarvis\\dictation\\dictation_engine.py",
+          "line": 42,
+          "statement": "from pynput import keyboard"
+        },
+        {
+          "file": "src\\jarvis\\dictation\\dictation_engine.py",
+          "line": 52,
+          "statement": "from pynput._util.darwin import ListenerMixin"
+        },
+        {
+          "file": "tests\\test_dictation.py",
+          "line": 526,
+          "statement": "from pynput import keyboard"
+        },
+        {
+          "file": "tests\\test_dictation.py",
+          "line": 538,
+          "statement": "from pynput import keyboard"
+        },
+        {
+          "file": "tests\\test_dictation.py",
+          "line": 149,
+          "statement": "import pynput"
+        },
+        {
+          "file": "tests\\fixtures\\macos_hotkey_probe.py",
+          "line": 4,
+          "statement": "from pynput import keyboard"
+        },
+        {
+          "file": "tests\\fixtures\\macos_hotkey_probe.py",
+          "line": 6,
+          "statement": "import pynput.keyboard._darwin"
+        }
+      ]
+    },
+    {
+      "package": "tzdata",
+      "latest_version": "2026.5",
+      "last_release_date": "2026-10-03",
+      "days_since_last_release": 11,
+      "requires_python": ">=2",
+      "is_at_risk": false,
+      "risk_indicators": [],
+      "usage_locations": []
+    },
+    {
+      "package": "nvidia-cudnn-cu12",
+      "latest_version": "9.27.0.42",
+      "last_release_date": "2026-09-29",
+      "days_since_last_release": 15,
+      "requires_python": ">=3",
+      "is_at_risk": false,
+      "risk_indicators": [],
+      "usage_locations": []
+    },
+    {
+      "package": "chatterbox-tts",
+      "latest_version": "0.1.7",
+      "last_release_date": "2026-03-26",
+      "days_since_last_release": 203,
+      "requires_python": ">=3.10",
+      "is_at_risk": false,
+      "risk_indicators": [],
+      "usage_locations": []
+    },
+    {
+      "package": "nvidia-cublas-cu12",
+      "latest_version": "12.9.2.10",
+      "last_release_date": "2026-04-08",
+      "days_since_last_release": 189,
+      "requires_python": ">=3",
+      "is_at_risk": false,
+      "risk_indicators": [],
+      "usage_locations": []
+    },
+    {
+      "package": "pydantic",
+      "latest_version": "2.14.1",
+      "last_release_date": "2026-10-11",
+      "days_since_last_release": 3,
+      "requires_python": ">=3.10",
+      "is_at_risk": false,
+      "risk_indicators": [],
+      "usage_locations": []
+    },
+    {
+      "package": "psutil",
+      "latest_version": "7.2.2",
+      "last_release_date": "2026-01-28",
+      "days_since_last_release": 259,
+      "requires_python": ">=3.6",
+      "is_at_risk": false,
+      "risk_indicators": [],
+      "usage_locations": [
+        {
+          "file": "src\\desktop_app\\app.py",
+          "line": 32,
+          "statement": "import psutil"
+        }
+      ]
+    },
+    {
+      "package": "PyQt6",
+      "latest_version": "6.11.0",
+      "last_release_date": "2026-03-30",
+      "days_since_last_release": 199,
+      "requires_python": ">=3.10",
+      "is_at_risk": false,
+      "risk_indicators": [],
+      "usage_locations": [
+        {
+          "file": "scripts\\capture_face_preview.py",
+          "line": 20,
+          "statement": "from PyQt6.QtCore import Qt, QRectF"
+        },
+        {
+          "file": "scripts\\capture_face_preview.py",
+          "line": 21,
+          "statement": "from PyQt6.QtGui import QColor, QFont, QImage, QPainter"
+        },
+        {
+          "file": "scripts\\capture_face_preview.py",
+          "line": 22,
+          "statement": "from PyQt6.QtWidgets import QApplication"
+        },
+        {
+          "file": "scripts\\capture_readme_screenshots.py",
+          "line": 23,
+          "statement": "from PyQt6.QtWidgets import QApplication"
+        },
+        {
+          "file": "scripts\\capture_readme_screenshots.py",
+          "line": 24,
+          "statement": "from PyQt6.QtTest import QTest"
+        },
+        {
+          "file": "src\\desktop_app\\app.py",
+          "line": 44,
+          "statement": "from PyQt6.QtWidgets import QApplication, QSystemTrayIcon, QMenu, QMainWindow, QTextEdit, QVBoxLayout, QHBoxLayout, QWidget, QLabel, QDialog, QPushButton, QProgressBar, QScrollArea, QFrame"
+        },
+        {
+          "file": "src\\desktop_app\\app.py",
+          "line": 45,
+          "statement": "from PyQt6.QtGui import QIcon, QAction, QFont, QTextCursor, QTextCharFormat, QColor"
+        },
+        {
+          "file": "src\\desktop_app\\app.py",
+          "line": 46,
+          "statement": "from PyQt6.QtCore import QTimer, Qt, pyqtSignal, QObject, QThread, QUrl"
+        },
+        {
+          "file": "src\\desktop_app\\app.py",
+          "line": 60,
+          "statement": "from PyQt6.QtWebEngineWidgets import QWebEngineView"
+        },
+        {
+          "file": "src\\desktop_app\\app.py",
+          "line": 1049,
+          "statement": "from PyQt6.QtWidgets import QMessageBox"
+        },
+        {
+          "file": "src\\desktop_app\\app.py",
+          "line": 1050,
+          "statement": "from PyQt6.QtGui import QIcon"
+        },
+        {
+          "file": "src\\desktop_app\\app.py",
+          "line": 3141,
+          "statement": "from PyQt6.QtWidgets import QMessageBox"
+        },
+        {
+          "file": "src\\desktop_app\\app.py",
+          "line": 737,
+          "statement": "from PyQt6.QtWidgets import QDialog, QVBoxLayout, QHBoxLayout, QLabel, QPushButton, QTextEdit, QCheckBox"
+        },
+        {
+          "file": "src\\desktop_app\\app.py",
+          "line": 741,
+          "statement": "from PyQt6.QtCore import Qt"
+        },
+        {
+          "file": "src\\desktop_app\\app.py",
+          "line": 2023,
+          "statement": "from PyQt6.QtWidgets import QMessageBox"
+        },
+        {
+          "file": "src\\desktop_app\\app.py",
+          "line": 2064,
+          "statement": "from PyQt6.QtWidgets import QWizard"
+        },
+        {
+          "file": "src\\desktop_app\\app.py",
+          "line": 2089,
+          "statement": "from PyQt6.QtWidgets import QMessageBox"
+        },
+        {
+          "file": "src\\desktop_app\\app.py",
+          "line": 3217,
+          "statement": "from PyQt6.QtWidgets import QApplication"
+        },
+        {
+          "file": "src\\desktop_app\\app.py",
+          "line": 3339,
+          "statement": "from PyQt6.QtWidgets import QApplication"
+        },
+        {
+          "file": "src\\desktop_app\\app.py",
+          "line": 3407,
+          "statement": "from PyQt6.QtWidgets import QApplication"
+        },
+        {
+          "file": "src\\desktop_app\\app.py",
+          "line": 3408,
+          "statement": "from PyQt6.QtCore import QTimer"
+        },
+        {
+          "file": "src\\desktop_app\\app.py",
+          "line": 3446,
+          "statement": "from PyQt6.QtCore import QEventLoop"
+        },
+        {
+          "file": "src\\desktop_app\\app.py",
+          "line": 1653,
+          "statement": "from PyQt6.QtWidgets import QMessageBox"
+        },
+        {
+          "file": "src\\desktop_app\\app.py",
+          "line": 2371,
+          "statement": "from PyQt6.QtGui import QPixmap, QPainter, QColor, QFont"
+        },
+        {
+          "file": "src\\desktop_app\\app.py",
+          "line": 3774,
+          "statement": "from PyQt6.QtWidgets import QSystemTrayIcon"
+        },
+        {
+          "file": "src\\desktop_app\\app.py",
+          "line": 2161,
+          "statement": "from PyQt6.QtWidgets import QMessageBox"
+        },
+        {
+          "file": "src\\desktop_app\\app.py",
+          "line": 3791,
+          "statement": "from PyQt6.QtWidgets import QApplication, QMessageBox"
+        },
+        {
+          "file": "src\\desktop_app\\chat_window.py",
+          "line": 23,
+          "statement": "from PyQt6.QtCore import Qt, QTimer, pyqtSignal, QObject, QRectF"
+        },
+        {
+          "file": "src\\desktop_app\\chat_window.py",
+          "line": 24,
+          "statement": "from PyQt6.QtGui import QCloseEvent, QShowEvent, QPainter, QColor, QPen, QLinearGradient, QRadialGradient, QShortcut, QKeySequence"
+        },
+        {
+          "file": "src\\desktop_app\\chat_window.py",
+          "line": 28,
+          "statement": "from PyQt6.QtWidgets import QHBoxLayout, QLayout, QLabel, QMainWindow, QPlainTextEdit, QPushButton, QScrollArea, QVBoxLayout, QWidget, QSizeGrip"
+        },
+        {
+          "file": "src\\desktop_app\\chat_window.py",
+          "line": 946,
+          "statement": "from PyQt6.QtGui import QKeyEvent"
+        },
+        {
+          "file": "src\\desktop_app\\chat_window.py",
+          "line": 947,
+          "statement": "from PyQt6.QtCore import Qt"
+        },
+        {
+          "file": "src\\desktop_app\\diary_dialog.py",
+          "line": 5,
+          "statement": "from PyQt6.QtWidgets import QDialog, QVBoxLayout, QLabel, QTextEdit, QProgressBar, QFrame"
+        },
+        {
+          "file": "src\\desktop_app\\diary_dialog.py",
+          "line": 8,
+          "statement": "from PyQt6.QtCore import Qt, pyqtSignal, QObject"
+        },
+        {
+          "file": "src\\desktop_app\\diary_dialog.py",
+          "line": 9,
+          "statement": "from PyQt6.QtGui import QFont"
+        },
+        {
+          "file": "src\\desktop_app\\dictation_history.py",
+          "line": 14,
+          "statement": "from PyQt6.QtWidgets import QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, QLabel, QPushButton, QScrollArea, QFrame, QApplication, QMessageBox"
+        },
+        {
+          "file": "src\\desktop_app\\dictation_history.py",
+          "line": 19,
+          "statement": "from PyQt6.QtCore import Qt, pyqtSignal, QObject, QTimer"
+        },
+        {
+          "file": "src\\desktop_app\\dictation_history.py",
+          "line": 20,
+          "statement": "from PyQt6.QtGui import QFont"
+        },
+        {
+          "file": "src\\desktop_app\\face_widget.py",
+          "line": 10,
+          "statement": "from PyQt6.QtWidgets import QWidget, QVBoxLayout, QApplication, QMenu"
+        },
+        {
+          "file": "src\\desktop_app\\face_widget.py",
+          "line": 11,
+          "statement": "from PyQt6.QtGui import QPainter, QPen, QColor, QPainterPath, QPainterPathStroker, QRadialGradient, QRegion"
+        },
+        {
+          "file": "src\\desktop_app\\face_widget.py",
+          "line": 12,
+          "statement": "from PyQt6.QtCore import Qt, QTimer, QPointF, pyqtSignal, QObject"
+        },
+        {
+          "file": "src\\desktop_app\\issue_report.py",
+          "line": 9,
+          "statement": "from PyQt6.QtWidgets import QApplication, QCheckBox, QDialog, QHBoxLayout, QLabel, QLineEdit, QPlainTextEdit, QPushButton, QScrollArea, QStackedWidget, QTextBrowser, QVBoxLayout, QWidget"
+        },
+        {
+          "file": "src\\desktop_app\\qt_worker.py",
+          "line": 22,
+          "statement": "from PyQt6.QtCore import QThread"
+        },
+        {
+          "file": "src\\desktop_app\\settings_window.py",
+          "line": 15,
+          "statement": "from PyQt6.QtWidgets import QDialog, QVBoxLayout, QHBoxLayout, QWidget, QLabel, QLineEdit, QSpinBox, QDoubleSpinBox, QCheckBox, QComboBox, QScrollArea, QGroupBox, QFormLayout, QPushButton, QMessageBox, QSizePolicy, QListWidget, QListWidgetItem, QStackedWidget, QSplitter, QInputDialog, QFrame"
+        },
+        {
+          "file": "src\\desktop_app\\settings_window.py",
+          "line": 22,
+          "statement": "from PyQt6.QtCore import Qt, QSize"
+        },
+        {
+          "file": "src\\desktop_app\\settings_window.py",
+          "line": 23,
+          "statement": "from PyQt6.QtGui import QFont"
+        },
+        {
+          "file": "src\\desktop_app\\setup_wizard.py",
+          "line": 370,
+          "statement": "from PyQt6.QtWidgets import QApplication, QWizard, QWizardPage, QVBoxLayout, QHBoxLayout, QLabel, QPushButton, QProgressBar, QTextEdit, QWidget, QFrame, QSizePolicy, QScrollArea, QLineEdit, QSlider, QComboBox, QCheckBox, QDoubleSpinBox, QRadioButton, QButtonGroup, QStackedWidget, QLayout, QBoxLayout"
+        },
+        {
+          "file": "src\\desktop_app\\setup_wizard.py",
+          "line": 377,
+          "statement": "from PyQt6.QtCore import Qt, QTimer, pyqtSignal, QThread, QObject"
+        },
+        {
+          "file": "src\\desktop_app\\setup_wizard.py",
+          "line": 378,
+          "statement": "from PyQt6.QtGui import QFont, QColor, QPalette, QPixmap, QPainter"
+        },
+        {
+          "file": "src\\desktop_app\\splash_screen.py",
+          "line": 10,
+          "statement": "from PyQt6.QtWidgets import QWidget, QVBoxLayout, QLabel, QApplication"
+        },
+        {
+          "file": "src\\desktop_app\\splash_screen.py",
+          "line": 11,
+          "statement": "from PyQt6.QtGui import QPainter, QPen, QColor, QBrush, QRadialGradient, QFont"
+        },
+        {
+          "file": "src\\desktop_app\\splash_screen.py",
+          "line": 12,
+          "statement": "from PyQt6.QtCore import Qt, QTimer, QRectF, pyqtSignal"
+        },
+        {
+          "file": "src\\desktop_app\\updater.py",
+          "line": 23,
+          "statement": "from PyQt6.QtCore import QObject, pyqtSignal"
+        },
+        {
+          "file": "src\\desktop_app\\update_dialog.py",
+          "line": 15,
+          "statement": "from PyQt6.QtCore import Qt, QTimer"
+        },
+        {
+          "file": "src\\desktop_app\\update_dialog.py",
+          "line": 16,
+          "statement": "from PyQt6.QtGui import QCursor"
+        },
+        {
+          "file": "src\\desktop_app\\update_dialog.py",
+          "line": 17,
+          "statement": "from PyQt6.QtWidgets import QDialog, QFrame, QHBoxLayout, QLabel, QMessageBox, QProgressBar, QPushButton, QScrollArea, QSizePolicy, QVBoxLayout, QWidget"
+        },
+        {
+          "file": "src\\desktop_app\\update_dialog.py",
+          "line": 609,
+          "statement": "from PyQt6.QtWidgets import QApplication"
+        },
+        {
+          "file": "tests\\conftest.py",
+          "line": 186,
+          "statement": "from PyQt6.QtWidgets import QApplication"
+        },
+        {
+          "file": "tests\\conftest.py",
+          "line": 197,
+          "statement": "from PyQt6 import sip"
+        },
+        {
+          "file": "tests\\conftest.py",
+          "line": 198,
+          "statement": "from PyQt6.QtCore import QCoreApplication, QEvent"
+        },
+        {
+          "file": "tests\\test_chat_window.py",
+          "line": 26,
+          "statement": "from PyQt6.QtCore import Qt, QPoint"
+        },
+        {
+          "file": "tests\\test_chat_window.py",
+          "line": 27,
+          "statement": "from PyQt6.QtTest import QTest"
+        },
+        {
+          "file": "tests\\test_chat_window.py",
+          "line": 28,
+          "statement": "from PyQt6.QtWidgets import QSizeGrip"
+        },
+        {
+          "file": "tests\\test_chat_window.py",
+          "line": 49,
+          "statement": "from PyQt6.QtCore import Qt"
+        },
+        {
+          "file": "tests\\test_chat_window.py",
+          "line": 75,
+          "statement": "from PyQt6.QtCore import Qt"
+        },
+        {
+          "file": "tests\\test_chat_window.py",
+          "line": 76,
+          "statement": "from PyQt6.QtWidgets import QLabel"
+        },
+        {
+          "file": "tests\\test_chat_window.py",
+          "line": 77,
+          "statement": "from PyQt6.QtTest import QTest"
+        },
+        {
+          "file": "tests\\test_chat_window.py",
+          "line": 298,
+          "statement": "from PyQt6.QtGui import QCloseEvent"
+        },
+        {
+          "file": "tests\\test_chat_window.py",
+          "line": 612,
+          "statement": "from PyQt6.QtCore import Qt, QEvent"
+        },
+        {
+          "file": "tests\\test_chat_window.py",
+          "line": 613,
+          "statement": "from PyQt6.QtGui import QKeyEvent"
+        },
+        {
+          "file": "tests\\test_chat_window.py",
+          "line": 634,
+          "statement": "from PyQt6.QtCore import Qt, QEvent"
+        },
+        {
+          "file": "tests\\test_chat_window.py",
+          "line": 635,
+          "statement": "from PyQt6.QtGui import QKeyEvent"
+        },
+        {
+          "file": "tests\\test_chat_window.py",
+          "line": 654,
+          "statement": "from PyQt6.QtCore import Qt, QEvent"
+        },
+        {
+          "file": "tests\\test_chat_window.py",
+          "line": 655,
+          "statement": "from PyQt6.QtGui import QKeyEvent"
+        },
+        {
+          "file": "tests\\test_chat_window.py",
+          "line": 682,
+          "statement": "from PyQt6.QtTest import QTest"
+        },
+        {
+          "file": "tests\\test_chat_window.py",
+          "line": 713,
+          "statement": "from PyQt6.QtGui import QCloseEvent"
+        },
+        {
+          "file": "tests\\test_chat_window.py",
+          "line": 817,
+          "statement": "from PyQt6.QtWidgets import QLabel"
+        },
+        {
+          "file": "tests\\test_chat_window.py",
+          "line": 866,
+          "statement": "from PyQt6.QtWidgets import QLabel"
+        },
+        {
+          "file": "tests\\test_chat_window.py",
+          "line": 892,
+          "statement": "from PyQt6.QtWidgets import QLabel"
+        },
+        {
+          "file": "tests\\test_chat_window.py",
+          "line": 910,
+          "statement": "from PyQt6.QtWidgets import QLabel"
+        },
+        {
+          "file": "tests\\test_chat_window.py",
+          "line": 941,
+          "statement": "from PyQt6.QtWidgets import QPushButton"
+        },
+        {
+          "file": "tests\\test_desktop_app.py",
+          "line": 112,
+          "statement": "from PyQt6.QtWidgets import QMessageBox, QWidget"
+        },
+        {
+          "file": "tests\\test_desktop_app.py",
+          "line": 1395,
+          "statement": "from PyQt6 import QtWidgets"
+        },
+        {
+          "file": "tests\\test_desktop_app.py",
+          "line": 1503,
+          "statement": "from PyQt6.QtWidgets import QLabel, QPushButton"
+        },
+        {
+          "file": "tests\\test_desktop_app.py",
+          "line": 1528,
+          "statement": "from PyQt6.QtWidgets import QSystemTrayIcon"
+        },
+        {
+          "file": "tests\\test_desktop_app.py",
+          "line": 1539,
+          "statement": "from PyQt6.QtWidgets import QLabel, QSystemTrayIcon"
+        },
+        {
+          "file": "tests\\test_desktop_app.py",
+          "line": 1665,
+          "statement": "from PyQt6.QtGui import QAction"
+        },
+        {
+          "file": "tests\\test_desktop_app.py",
+          "line": 1756,
+          "statement": "from PyQt6.QtGui import QAction"
+        },
+        {
+          "file": "tests\\test_desktop_app.py",
+          "line": 1802,
+          "statement": "from PyQt6.QtGui import QAction"
+        },
+        {
+          "file": "tests\\test_dictation_history.py",
+          "line": 430,
+          "statement": "from PyQt6.QtCore import QEventLoop, QTimer"
+        },
+        {
+          "file": "tests\\test_dictation_history.py",
+          "line": 431,
+          "statement": "from PyQt6.QtWidgets import QMessageBox"
+        },
+        {
+          "file": "tests\\test_dictation_history.py",
+          "line": 482,
+          "statement": "from PyQt6.QtCore import Qt"
+        },
+        {
+          "file": "tests\\test_dictation_history.py",
+          "line": 483,
+          "statement": "from PyQt6.QtWidgets import QLabel"
+        },
+        {
+          "file": "tests\\test_dictation_history.py",
+          "line": 187,
+          "statement": "from PyQt6.QtWidgets import QLabel, QScrollArea"
+        },
+        {
+          "file": "tests\\test_dictation_history.py",
+          "line": 205,
+          "statement": "from PyQt6.QtWidgets import QScrollArea"
+        },
+        {
+          "file": "tests\\test_dictation_history.py",
+          "line": 238,
+          "statement": "from PyQt6.QtWidgets import QScrollArea"
+        },
+        {
+          "file": "tests\\test_dictation_history.py",
+          "line": 266,
+          "statement": "from PyQt6.QtWidgets import QLabel"
+        },
+        {
+          "file": "tests\\test_dictation_history.py",
+          "line": 282,
+          "statement": "from PyQt6.QtWidgets import QLabel, QPushButton"
+        },
+        {
+          "file": "tests\\test_dictation_history.py",
+          "line": 311,
+          "statement": "from PyQt6.QtWidgets import QLabel, QPushButton, QMessageBox"
+        },
+        {
+          "file": "tests\\test_dictation_history.py",
+          "line": 342,
+          "statement": "from PyQt6.QtWidgets import QLabel"
+        },
+        {
+          "file": "tests\\test_dictation_history_watching.py",
+          "line": 13,
+          "statement": "from PyQt6.QtWidgets import QLabel"
+        },
+        {
+          "file": "tests\\test_dictation_history_watching.py",
+          "line": 51,
+          "statement": "from PyQt6.QtWidgets import QLabel"
+        },
+        {
+          "file": "tests\\test_face_animation.py",
+          "line": 13,
+          "statement": "from PyQt6.QtCore import Qt, QPoint"
+        },
+        {
+          "file": "tests\\test_face_animation.py",
+          "line": 14,
+          "statement": "from PyQt6.QtGui import QImage, QPainter, QRegion"
+        },
+        {
+          "file": "tests\\test_face_presence.py",
+          "line": 3,
+          "statement": "from PyQt6.QtCore import Qt, QPoint, QPointF"
+        },
+        {
+          "file": "tests\\test_face_presence.py",
+          "line": 4,
+          "statement": "from PyQt6.QtGui import QContextMenuEvent, QMouseEvent"
+        },
+        {
+          "file": "tests\\test_face_presence.py",
+          "line": 5,
+          "statement": "from PyQt6.QtWidgets import QMenu"
+        },
+        {
+          "file": "tests\\test_face_presence.py",
+          "line": 124,
+          "statement": "from PyQt6.QtGui import QImage, QPainter"
+        },
+        {
+          "file": "tests\\test_face_presence.py",
+          "line": 161,
+          "statement": "from PyQt6.QtGui import QAction"
+        },
+        {
+          "file": "tests\\test_face_presence.py",
+          "line": 216,
+          "statement": "from PyQt6.QtGui import QColor"
+        },
+        {
+          "file": "tests\\test_face_presence.py",
+          "line": 229,
+          "statement": "from PyQt6.QtTest import QTest"
+        },
+        {
+          "file": "tests\\test_issue_report_flow.py",
+          "line": 6,
+          "statement": "from PyQt6.QtWidgets import QCheckBox, QDialog, QLineEdit, QPlainTextEdit, QPushButton"
+        },
+        {
+          "file": "tests\\test_issue_report_flow.py",
+          "line": 135,
+          "statement": "from PyQt6.QtWidgets import QScrollArea"
+        },
+        {
+          "file": "tests\\test_issue_report_flow.py",
+          "line": 267,
+          "statement": "from PyQt6.QtWidgets import QScrollArea"
+        },
+        {
+          "file": "tests\\test_log_progress.py",
+          "line": 38,
+          "statement": "from PyQt6.QtGui import QColor"
+        },
+        {
+          "file": "tests\\test_low_confidence_feedback.py",
+          "line": 3,
+          "statement": "from PyQt6.QtWidgets import QLabel"
+        },
+        {
+          "file": "tests\\test_low_confidence_feedback.py",
+          "line": 4,
+          "statement": "from PyQt6.QtTest import QTest"
+        },
+        {
+          "file": "tests\\test_memory_viewer_opening.py",
+          "line": 40,
+          "statement": "from PyQt6.QtWidgets import QMessageBox"
+        },
+        {
+          "file": "tests\\test_memory_viewer_opening.py",
+          "line": 63,
+          "statement": "from PyQt6.QtWidgets import QWidget"
+        },
+        {
+          "file": "tests\\test_memory_viewer_opening.py",
+          "line": 81,
+          "statement": "from PyQt6.QtWidgets import QWidget"
+        },
+        {
+          "file": "tests\\test_model_recommendations.py",
+          "line": 97,
+          "statement": "from PyQt6.QtCore import Qt"
+        },
+        {
+          "file": "tests\\test_model_recommendations.py",
+          "line": 98,
+          "statement": "from PyQt6.QtWidgets import QLabel, QPushButton"
+        },
+        {
+          "file": "tests\\test_model_recommendations.py",
+          "line": 162,
+          "statement": "from PyQt6.QtWidgets import QScrollArea, QPushButton"
+        },
+        {
+          "file": "tests\\test_selected_config_path.py",
+          "line": 50,
+          "statement": "from PyQt6.QtWidgets import QLabel"
+        },
+        {
+          "file": "tests\\test_settings_window.py",
+          "line": 510,
+          "statement": "from PyQt6.QtWidgets import QLabel"
+        },
+        {
+          "file": "tests\\test_setup_wizard.py",
+          "line": 706,
+          "statement": "from PyQt6.QtWidgets import QLabel"
+        },
+        {
+          "file": "tests\\test_setup_wizard.py",
+          "line": 866,
+          "statement": "from PyQt6.QtWidgets import QComboBox"
+        },
+        {
+          "file": "tests\\test_setup_wizard.py",
+          "line": 1199,
+          "statement": "from PyQt6.QtWidgets import QComboBox"
+        },
+        {
+          "file": "tests\\test_setup_wizard.py",
+          "line": 1206,
+          "statement": "from PyQt6.QtWidgets import QComboBox"
+        },
+        {
+          "file": "tests\\test_setup_wizard.py",
+          "line": 1332,
+          "statement": "from PyQt6.QtWidgets import QDoubleSpinBox, QLabel"
+        },
+        {
+          "file": "tests\\test_setup_wizard.py",
+          "line": 1354,
+          "statement": "from PyQt6.QtWidgets import QDoubleSpinBox, QLabel"
+        },
+        {
+          "file": "tests\\test_setup_wizard.py",
+          "line": 1367,
+          "statement": "from PyQt6.QtWidgets import QDoubleSpinBox, QLabel"
+        },
+        {
+          "file": "tests\\test_setup_wizard.py",
+          "line": 1379,
+          "statement": "from PyQt6.QtWidgets import QDoubleSpinBox, QLabel"
+        },
+        {
+          "file": "tests\\test_setup_wizard.py",
+          "line": 1392,
+          "statement": "from PyQt6.QtWidgets import QDoubleSpinBox, QLabel"
+        },
+        {
+          "file": "tests\\test_setup_wizard.py",
+          "line": 1404,
+          "statement": "from PyQt6.QtWidgets import QDoubleSpinBox"
+        },
+        {
+          "file": "tests\\test_setup_wizard.py",
+          "line": 1416,
+          "statement": "from PyQt6.QtWidgets import QDoubleSpinBox, QLabel"
+        },
+        {
+          "file": "tests\\test_setup_wizard.py",
+          "line": 1437,
+          "statement": "from PyQt6.QtWidgets import QDoubleSpinBox, QLabel"
+        },
+        {
+          "file": "tests\\test_setup_wizard.py",
+          "line": 1461,
+          "statement": "from PyQt6.QtWidgets import QDoubleSpinBox, QLabel"
+        },
+        {
+          "file": "tests\\test_setup_wizard.py",
+          "line": 1483,
+          "statement": "from PyQt6.QtWidgets import QDoubleSpinBox, QLabel"
+        },
+        {
+          "file": "tests\\test_setup_wizard.py",
+          "line": 1501,
+          "statement": "from PyQt6.QtWidgets import QDoubleSpinBox"
+        },
+        {
+          "file": "tests\\test_setup_wizard.py",
+          "line": 1513,
+          "statement": "from PyQt6.QtWidgets import QDoubleSpinBox, QLabel"
+        },
+        {
+          "file": "tests\\test_setup_wizard.py",
+          "line": 1803,
+          "statement": "from PyQt6.QtWidgets import QLabel"
+        },
+        {
+          "file": "tests\\test_setup_wizard.py",
+          "line": 858,
+          "statement": "from PyQt6.QtWidgets import QLineEdit"
+        },
+        {
+          "file": "tests\\test_update_download_cancellation.py",
+          "line": 8,
+          "statement": "from PyQt6.QtWidgets import QDialog"
+        },
+        {
+          "file": "tests\\test_voice_pause_tray.py",
+          "line": 8,
+          "statement": "from PyQt6.QtGui import QAction"
+        },
+        {
+          "file": "tests\\test_wizard_layout.py",
+          "line": 4,
+          "statement": "from PyQt6.QtCore import QPoint"
+        },
+        {
+          "file": "tests\\test_wizard_layout.py",
+          "line": 5,
+          "statement": "from PyQt6.QtTest import QTest"
+        },
+        {
+          "file": "tests\\test_wizard_layout.py",
+          "line": 6,
+          "statement": "from PyQt6.QtWidgets import QComboBox, QDoubleSpinBox, QLineEdit, QPushButton, QScrollArea, QWizard"
+        },
+        {
+          "file": "tests\\test_wizard_layout.py",
+          "line": 101,
+          "statement": "from PyQt6.QtWidgets import QStyle, QStyleOptionButton"
+        },
+        {
+          "file": "tests\\fixtures\\macos_hotkey_probe.py",
+          "line": 3,
+          "statement": "from PyQt6.QtWidgets import QApplication"
+        },
+        {
+          "file": "tests\\fixtures\\macos_paste_probe.py",
+          "line": 7,
+          "statement": "from PyQt6.QtWidgets import QApplication"
+        },
+        {
+          "file": "tests\\fixtures\\macos_tray_probe.py",
+          "line": 4,
+          "statement": "from PyQt6.QtWidgets import QApplication, QSystemTrayIcon, QMenu"
+        },
+        {
+          "file": "tests\\fixtures\\macos_tray_probe.py",
+          "line": 5,
+          "statement": "from PyQt6.QtGui import QIcon, QPixmap"
+        },
+        {
+          "file": "tests\\fixtures\\macos_tray_probe.py",
+          "line": 6,
+          "statement": "from PyQt6.QtCore import Qt"
+        }
+      ]
+    },
+    {
+      "package": "geoip2",
+      "latest_version": "5.3.0",
+      "last_release_date": "2026-07-16",
+      "days_since_last_release": 90,
+      "requires_python": ">=3.10",
+      "is_at_risk": false,
+      "risk_indicators": [],
+      "usage_locations": [
+        {
+          "file": "scripts\\setup_geolocation.py",
+          "line": 50,
+          "statement": "import geoip2"
+        },
+        {
+          "file": "src\\jarvis\\utils\\location.py",
+          "line": 14,
+          "statement": "import geoip2.database"
+        },
+        {
+          "file": "src\\jarvis\\utils\\location.py",
+          "line": 15,
+          "statement": "import geoip2.errors"
+        }
+      ]
+    },
+    {
+      "package": "piper-tts",
+      "latest_version": "1.8.0",
+      "last_release_date": "2026-09-04",
+      "days_since_last_release": 40,
+      "requires_python": ">=3.9",
+      "is_at_risk": false,
+      "risk_indicators": [],
+      "usage_locations": []
+    },
+    {
+      "package": "av",
+      "latest_version": "19.0.1",
+      "last_release_date": "2026-10-03",
+      "days_since_last_release": 12,
+      "requires_python": ">=3.12",
+      "is_at_risk": false,
+      "risk_indicators": [],
+      "usage_locations": []
+    },
+    {
+      "package": "pytest",
+      "latest_version": "9.1.1",
+      "last_release_date": "2026-06-19",
+      "days_since_last_release": 117,
+      "requires_python": ">=3.10",
+      "is_at_risk": true,
+      "risk_indicators": [
+        "Marked Inactive in PyPI classifiers"
+      ],
+      "usage_locations": [
+        {
+          "file": "conftest.py",
+          "line": 7,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\conftest.py",
+          "line": 14,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\helpers.py",
+          "line": 84,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\helpers.py",
+          "line": 131,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_agent_behavior.py",
+          "line": 15,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_apostrophe_echo.py",
+          "line": 7,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_complex_flows.py",
+          "line": 19,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_context_switch_tools.py",
+          "line": 34,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_diary_graph_source_identity.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_diary_pending_snapshot.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_diary_summariser_hygiene.py",
+          "line": 18,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_diary_supplies_missing_tool_arg.py",
+          "line": 10,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_distinct_tool_calls.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_embedded_user_fact_capture.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_empty_reply_recovery.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_followup_supplies_missing_tool_arg.py",
+          "line": 10,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_graph_branch_routing.py",
+          "line": 29,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_graph_completed_transactions.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_graph_extraction_json.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_graph_fact_source_grounding.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_graph_merge_concurrency.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_graph_recall_readers.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_graph_source_date.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_graph_split_capacity.py",
+          "line": 2,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_graph_split_concurrency.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_graph_supplies_missing_tool_arg.py",
+          "line": 10,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_greeting_no_tools.py",
+          "line": 10,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_hybrid_retrieval.py",
+          "line": 10,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_intent_judge.py",
+          "line": 8,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_invalid_tool_arguments.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_knowledge_extraction.py",
+          "line": 22,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_large_page_reading.py",
+          "line": 7,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_listener_integration.py",
+          "line": 25,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_local_whisper_runtime.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_max_turn_digest.py",
+          "line": 2,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_mcp_fault_reply.py",
+          "line": 8,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_meal_deletion_followup.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_meal_summary_coverage.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_memory_digest_identity.py",
+          "line": 3,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_memory_digest_preferences.py",
+          "line": 3,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_memory_digest_relevance.py",
+          "line": 2,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_memory_recall_parameters.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_merge_consolidation.py",
+          "line": 25,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_multi_turn_context.py",
+          "line": 17,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_nutrition_extraction.py",
+          "line": 19,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_personal_context_location.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_planner_clock_context.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_planner_dialogue_window.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_planner_file_listing.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_planner_literal_content.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_planner_location_resolution.py",
+          "line": 2,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_planner_personalisation.py",
+          "line": 17,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_planner_required_resolution.py",
+          "line": 2,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_planner_schema_context.py",
+          "line": 2,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_planner_trivial_with_tools.py",
+          "line": 12,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_plan_failure_recovery.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_possessor_field_repro.py",
+          "line": 27,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_provider_tool_history.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_recency_superseding.py",
+          "line": 24,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_recent_record_followup.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_reply_tool_loop.py",
+          "line": 12,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_router_requested_action.py",
+          "line": 3,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_saved_plan_calendar.py",
+          "line": 7,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_saved_reasoning_settings.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_scored_verifier_calibration.py",
+          "line": 2,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_speech_constraint_resolution.py",
+          "line": 2,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_speech_context_routing.py",
+          "line": 2,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_stop_echo_controls.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_tool_digest_facts.py",
+          "line": 2,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_tool_protocol_schema.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_tool_router_context_aware.py",
+          "line": 27,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_tool_router_implicit.py",
+          "line": 30,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_tool_selection.py",
+          "line": 10,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_unicode_wake_aliases.py",
+          "line": 3,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_url_redaction.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_utility_memory_recall.py",
+          "line": 2,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_warm_profile_external_edits.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_weather_autoderive_location.py",
+          "line": 36,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_weather_calendar.py",
+          "line": 7,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_weather_explicit_location_guidance.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_weather_place_extraction.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_web_search_fallback.py",
+          "line": 20,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_web_search_result_grounding.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\test_whisper_audio_evidence.py",
+          "line": 12,
+          "statement": "import pytest"
+        },
+        {
+          "file": "evals\\tool_routing.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\conftest.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_apostrophe_echo.py",
+          "line": 2,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_audio_capture_pipeline.py",
+          "line": 8,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_audio_test_policy.py",
+          "line": 10,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_benchmark_collection_safety.py",
+          "line": 8,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_chat_submission.py",
+          "line": 24,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_chat_window.py",
+          "line": 19,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_compound_query.py",
+          "line": 3,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_config_atomic_save.py",
+          "line": 16,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_config_example.py",
+          "line": 8,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_config_mcps.py",
+          "line": 1,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_config_models.py",
+          "line": 8,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_config_path_expansion.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_conversation_cache_inputs.py",
+          "line": 2,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_daemon_graph_store_cleanup.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_daemon_lifecycle.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_daemon_lock.py",
+          "line": 11,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_debug_side_effects.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_desktop_app.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_desktop_keepalive_workers.py",
+          "line": 12,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_desktop_release_changes.py",
+          "line": 8,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_dialogue_memory.py",
+          "line": 3,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_dialogue_memory_hot_cache.py",
+          "line": 16,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_dialogue_memory_tool_carryover.py",
+          "line": 10,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_diary_bootstrap_contention.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_diary_constructor_cleanup.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_diary_embedding_failure.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_diary_embedding_freshness.py",
+          "line": 8,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_diary_enrichment_flow.py",
+          "line": 13,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_diary_fallback_index.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_diary_generation_budget.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_diary_graph_logging.py",
+          "line": 18,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_diary_graph_source_identity.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_diary_graph_store_cleanup.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_diary_import.py",
+          "line": 13,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_diary_import_lifetime.py",
+          "line": 7,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_diary_pending_batches.py",
+          "line": 9,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_diary_rewrite_sweep.py",
+          "line": 12,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_diary_summary_identity.py",
+          "line": 7,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_diary_topic_optimise.py",
+          "line": 15,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_dictation.py",
+          "line": 9,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_dictation_callback_sessions.py",
+          "line": 8,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_dictation_clipboard_failure_reporting.py",
+          "line": 7,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_dictation_history.py",
+          "line": 10,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_dictation_history_atomic_save.py",
+          "line": 8,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_dictation_history_failure_reporting.py",
+          "line": 7,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_dictation_history_read_failure.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_dictation_history_record_validation.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_dictation_history_watching.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_dictation_history_writers.py",
+          "line": 7,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_dictation_paste_failure_recovery.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_dictation_session_rate.py",
+          "line": 8,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_dictation_shortcut_events.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_dictation_test_isolation.py",
+          "line": 9,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_dictation_worker_lifetime.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_direct_response_completeness.py",
+          "line": 7,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_distinct_tool_calls.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_echo_detection.py",
+          "line": 9,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_echo_prefix_source_boundary.py",
+          "line": 1,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_embedding_timeout_wiring.py",
+          "line": 2,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_empty_reply_recovery.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_engine_hot_window_caches.py",
+          "line": 19,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_engine_kv_cache.py",
+          "line": 23,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_engine_planner_integration.py",
+          "line": 18,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_engine_registered_text_calls.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_engine_tool_carryover.py",
+          "line": 8,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_engine_tool_carryover_guard.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_engine_tool_search_loop.py",
+          "line": 13,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_enrichment.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_eval_backend_config.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_eval_diary_config.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_eval_helpers.py",
+          "line": 13,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_eval_max_turn_digest_contract.py",
+          "line": 7,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_eval_memory_digest_contract.py",
+          "line": 10,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_eval_memory_digest_relevance_contract.py",
+          "line": 7,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_eval_memory_tool_grounding_contract.py",
+          "line": 11,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_eval_multi_turn_contract.py",
+          "line": 10,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_eval_nutrition_config.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_eval_recall_parameter_contract.py",
+          "line": 10,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_eval_search_fixture.py",
+          "line": 2,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_eval_speech_config.py",
+          "line": 3,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_eval_tool_digest_facts_contract.py",
+          "line": 7,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_eval_verdicts.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_eval_verifier_selection.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_face_animation.py",
+          "line": 12,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_face_presence.py",
+          "line": 2,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_face_widget.py",
+          "line": 7,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_factory_dispatch_wiring.py",
+          "line": 12,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_failed_tool_followup_recovery.py",
+          "line": 3,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_faster_whisper_bundle_integration.py",
+          "line": 7,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_fetch_web_page_argument_types.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_fetch_web_page_byte_limit.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_fetch_web_page_decompression_memory.py",
+          "line": 8,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_fetch_web_page_streaming.py",
+          "line": 7,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_frozen_env_guards.py",
+          "line": 10,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_graph_access_tracking.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_graph_bootstrap_cleanup.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_graph_bootstrap_contention.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_graph_branch_dedupe.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_graph_concurrent_writes.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_graph_fact_hygiene.py",
+          "line": 8,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_graph_memory.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_graph_memory_tools.py",
+          "line": 7,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_graph_merge_concurrency.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_graph_mutation_listener.py",
+          "line": 14,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_graph_ops.py",
+          "line": 10,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_graph_parent_validation.py",
+          "line": 2,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_graph_profile_revision.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_graph_split_concurrency.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_graph_timing_context.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_greeting_no_tools.py",
+          "line": 12,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_hot_window_input.py",
+          "line": 16,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_hot_window_timer_ownership.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_hybrid_memory_search.py",
+          "line": 8,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_inactive_settings.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_install_cuda.py",
+          "line": 34,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_intent_judge.py",
+          "line": 3,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_invalid_tool_arguments.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_issue_report_flow.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_linux_update_archive_integrity.py",
+          "line": 10,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_listener_shutdown.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_listening_ux_overhaul.py",
+          "line": 12,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_llm_arguments_encoding.py",
+          "line": 7,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_llm_backend.py",
+          "line": 19,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_llm_factory.py",
+          "line": 14,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_llm_gpt_oss_thinking.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_llm_http.py",
+          "line": 7,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_llm_openai_compatible.py",
+          "line": 14,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_llm_streaming_budget.py",
+          "line": 10,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_llm_thinking.py",
+          "line": 11,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_llm_timeout_diagnostics.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_local_files_boolean_arguments.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_local_files_glob_confinement.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_local_files_path_arguments.py",
+          "line": 3,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_local_llm_privacy.py",
+          "line": 8,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_location_context.py",
+          "line": 3,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_log_progress.py",
+          "line": 8,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_log_progress.py",
+          "line": 129,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_low_confidence_events.py",
+          "line": 10,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_low_confidence_feedback.py",
+          "line": 2,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_macos_crash_report.py",
+          "line": 7,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_macos_hotkey_integration.py",
+          "line": 7,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_macos_hotkey_startup.py",
+          "line": 7,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_macos_paste_integration.py",
+          "line": 7,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_macos_paste_safety.py",
+          "line": 7,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_macos_tray_guard.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_macos_tray_integration.py",
+          "line": 7,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_max_turn_digest_generation_budget.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_mcp_client.py",
+          "line": 3,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_mcp_discovery.py",
+          "line": 3,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_mcp_error_reporting.py",
+          "line": 9,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_mcp_integration.py",
+          "line": 8,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_mcp_shutdown.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_memory_digest_generation_budget.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_memory_query_indexes.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_memory_recall_decision.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_memory_recall_generation_budget.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_memory_viewer_diary_optimise_api.py",
+          "line": 20,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_memory_viewer_diary_scrub_api.py",
+          "line": 18,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_memory_viewer_graph_api.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_memory_viewer_meal_rendering.py",
+          "line": 8,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_memory_viewer_offline_assets.py",
+          "line": 7,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_memory_viewer_opening.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_memory_viewer_progress_rendering.py",
+          "line": 9,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_missing_portaudio.py",
+          "line": 21,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_mlx_bundle.py",
+          "line": 7,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_mlx_bundle_integration.py",
+          "line": 7,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_model_budget_selection.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_model_default_budgets.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_model_recommendations.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_model_tiers.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_nonblocking_voice_capture.py",
+          "line": 8,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_ollama_model_identity.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_openai_compatible_e2e.py",
+          "line": 23,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_performance_sample_validity.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_personal_context.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_personal_context_verification.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_piper_download_concurrency.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_piper_download_recovery.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_piper_tts.py",
+          "line": 3,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_planner.py",
+          "line": 14,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_planner_clock_context.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_planner_complete_arguments.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_planner_dialogue_window.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_planner_generation_budget.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_planner_registered_names.py",
+          "line": 3,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_planner_required_arguments.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_planner_schema_context.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_planner_temporal_literals.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_planner_typed_arguments.py",
+          "line": 2,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_planner_url_arguments.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_plan_failure_recovery.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_portaudio_serialisation.py",
+          "line": 28,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_prompts.py",
+          "line": 7,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_prompt_dump.py",
+          "line": 9,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_provider_model_resolution.py",
+          "line": 23,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_public_website.py",
+          "line": 9,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_qt_fixture_lifecycle.py",
+          "line": 9,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_query_context_comparison.py",
+          "line": 7,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_query_validation.py",
+          "line": 3,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_queued_tts_tail_echo.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_readme_presentation.py",
+          "line": 8,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_recall_gate.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_redact_extended.py",
+          "line": 3,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_redact_large_text.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_release_smoke_promotion.py",
+          "line": 7,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_retired_evaluator_config.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_review_478_defects.py",
+          "line": 17,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_router_operation_contract.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_runtime_control_config.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_scored_eval_verdicts.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_search_http.py",
+          "line": 14,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_selected_config_path.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_settings_window.py",
+          "line": 12,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_setup_wizard.py",
+          "line": 16,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_short_query_echo.py",
+          "line": 3,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_speech_context.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_splash_screen.py",
+          "line": 8,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_state_manager.py",
+          "line": 10,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_stop_command_echo.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_text_tool_call_parser.py",
+          "line": 10,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_time_context.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_timing_recorder.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_tools.py",
+          "line": 1,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_tool_digest_generation_budget.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_tool_failure_diagnostics.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_tool_resource_followup.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_tool_router_resolution.py",
+          "line": 14,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_tool_search_tool.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_tool_selection.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_transcript_buffer.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_tts_preprocessing.py",
+          "line": 3,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_tts_startup_status.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_tune_player.py",
+          "line": 21,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_updater.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_update_download_cancellation.py",
+          "line": 7,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_update_download_cleanup.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_vector_store_isolation.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_vector_validation.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_vector_write_failure.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_voice_listener.py",
+          "line": 10,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_voice_pause.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_voice_pause_tray.py",
+          "line": 7,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_voice_query_language.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_vram.py",
+          "line": 12,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_wake_alias_boundaries.py",
+          "line": 2,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_wake_detection.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_warm_profile_external_edits.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_web_search_response_lifecycle.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_web_search_result_structure.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_whisper_audio_evidence.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_whisper_cache_boundary.py",
+          "line": 2,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_whisper_cache_failures.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_whisper_capabilities.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_whisper_models.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_whisper_network_failures.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_whisper_performance_guidance.py",
+          "line": 8,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_whisper_pre_download.py",
+          "line": 8,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_whisper_runtime_recovery.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_wizard_layout.py",
+          "line": 3,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\test_worker_probe_safety.py",
+          "line": 7,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\performance\\test_pipeline_timings.py",
+          "line": 30,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\tools\\builtin\\test_fetch_web_page.py",
+          "line": 3,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\tools\\builtin\\test_local_files.py",
+          "line": 3,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\tools\\builtin\\test_screenshot.py",
+          "line": 3,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\tools\\builtin\\test_stop.py",
+          "line": 3,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\tools\\builtin\\test_time_tool.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\tools\\builtin\\test_weather.py",
+          "line": 3,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\tools\\builtin\\test_weather_calendar.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\tools\\builtin\\test_weather_place_punctuation.py",
+          "line": 4,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\tools\\builtin\\test_web_search.py",
+          "line": 3,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\tools\\builtin\\nutrition\\test_fetch_meal_time_bounds.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\tools\\builtin\\nutrition\\test_log_meal.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\tools\\builtin\\nutrition\\test_log_meal_generation.py",
+          "line": 7,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\tools\\builtin\\nutrition\\test_log_meal_persistence.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\tools\\builtin\\nutrition\\test_meal_deletion_references.py",
+          "line": 5,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\tools\\builtin\\nutrition\\test_meal_recording_eligibility.py",
+          "line": 6,
+          "statement": "import pytest"
+        },
+        {
+          "file": "tests\\tools\\builtin\\nutrition\\test_meal_summary_estimates.py",
+          "line": 5,
+          "statement": "import pytest"
+        }
+      ]
+    },
+    {
+      "package": "lxml",
+      "latest_version": "6.1.3",
+      "last_release_date": "2026-09-02",
+      "days_since_last_release": 42,
+      "requires_python": ">=3.8",
+      "is_at_risk": false,
+      "risk_indicators": [],
+      "usage_locations": [
+        {
+          "file": "src\\jarvis\\tools\\builtin\\fetch_web_page.py",
+          "line": 8,
+          "statement": "from lxml import etree"
+        }
+      ]
+    },
+    {
+      "package": "requests",
+      "latest_version": "2.34.2",
+      "last_release_date": "2026-05-14",
+      "days_since_last_release": 153,
+      "requires_python": ">=3.10",
+      "is_at_risk": false,
+      "risk_indicators": [],
+      "usage_locations": [
+        {
+          "file": "evals\\query_context_comparison.py",
+          "line": 22,
+          "statement": "import requests"
+        },
+        {
+          "file": "src\\desktop_app\\setup_wizard.py",
+          "line": 23,
+          "statement": "import requests"
+        },
+        {
+          "file": "src\\desktop_app\\updater.py",
+          "line": 22,
+          "statement": "import requests"
+        },
+        {
+          "file": "src\\jarvis\\listening\\model_download.py",
+          "line": 51,
+          "statement": "from requests.exceptions import ConnectionError, RequestException, Timeout"
+        },
+        {
+          "file": "src\\jarvis\\listening\\model_download.py",
+          "line": 107,
+          "statement": "from requests.exceptions import ConnectionError"
+        },
+        {
+          "file": "src\\jarvis\\llm\\errors.py",
+          "line": 3,
+          "statement": "import requests"
+        },
+        {
+          "file": "src\\jarvis\\llm\\http.py",
+          "line": 9,
+          "statement": "import requests"
+        },
+        {
+          "file": "src\\jarvis\\llm\\ollama.py",
+          "line": 14,
+          "statement": "import requests"
+        },
+        {
+          "file": "src\\jarvis\\llm\\openai_compatible.py",
+          "line": 31,
+          "statement": "import requests"
+        },
+        {
+          "file": "src\\jarvis\\llm\\streaming.py",
+          "line": 6,
+          "statement": "import requests"
+        },
+        {
+          "file": "src\\jarvis\\output\\tts.py",
+          "line": 46,
+          "statement": "import requests"
+        },
+        {
+          "file": "src\\jarvis\\output\\tts.py",
+          "line": 133,
+          "statement": "import requests"
+        },
+        {
+          "file": "src\\jarvis\\tools\\http_response.py",
+          "line": 2,
+          "statement": "import requests"
+        },
+        {
+          "file": "src\\jarvis\\tools\\builtin\\fetch_web_page.py",
+          "line": 3,
+          "statement": "import requests"
+        },
+        {
+          "file": "src\\jarvis\\tools\\builtin\\time_tool.py",
+          "line": 18,
+          "statement": "import requests"
+        },
+        {
+          "file": "src\\jarvis\\tools\\builtin\\weather.py",
+          "line": 3,
+          "statement": "import requests"
+        },
+        {
+          "file": "src\\jarvis\\tools\\builtin\\web_search.py",
+          "line": 9,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\conftest.py",
+          "line": 248,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\conftest.py",
+          "line": 315,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\test_dictation.py",
+          "line": 984,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\test_eval_speech_config.py",
+          "line": 11,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\test_fetch_web_page_argument_types.py",
+          "line": 6,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\test_intent_judge.py",
+          "line": 327,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\test_intent_judge.py",
+          "line": 346,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\test_intent_judge.py",
+          "line": 384,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\test_intent_judge.py",
+          "line": 419,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\test_intent_judge.py",
+          "line": 391,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\test_llm_arguments_encoding.py",
+          "line": 8,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\test_llm_backend.py",
+          "line": 137,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\test_llm_backend.py",
+          "line": 192,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\test_llm_backend.py",
+          "line": 204,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\test_llm_backend.py",
+          "line": 228,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\test_llm_backend.py",
+          "line": 239,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\test_llm_openai_compatible.py",
+          "line": 190,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\test_llm_openai_compatible.py",
+          "line": 200,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\test_llm_openai_compatible.py",
+          "line": 210,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\test_llm_openai_compatible.py",
+          "line": 297,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\test_llm_openai_compatible.py",
+          "line": 314,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\test_llm_openai_compatible.py",
+          "line": 328,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\test_llm_openai_compatible.py",
+          "line": 341,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\test_llm_openai_compatible.py",
+          "line": 360,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\test_llm_openai_compatible.py",
+          "line": 397,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\test_llm_openai_compatible.py",
+          "line": 422,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\test_llm_thinking.py",
+          "line": 128,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\test_llm_timeout_diagnostics.py",
+          "line": 7,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\test_ollama_model_identity.py",
+          "line": 6,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\test_piper_download_concurrency.py",
+          "line": 6,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\test_piper_download_recovery.py",
+          "line": 6,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\test_piper_tts.py",
+          "line": 572,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\test_piper_tts.py",
+          "line": 601,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\test_piper_tts.py",
+          "line": 625,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\test_setup_wizard.py",
+          "line": 17,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\test_updater.py",
+          "line": 247,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\test_voice_listener.py",
+          "line": 18,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\test_web_search_response_lifecycle.py",
+          "line": 7,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\test_whisper_network_failures.py",
+          "line": 7,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\test_whisper_pre_download.py",
+          "line": 235,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\test_whisper_pre_download.py",
+          "line": 263,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\test_whisper_pre_download.py",
+          "line": 289,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\performance\\test_pipeline_timings.py",
+          "line": 31,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\tools\\builtin\\test_fetch_web_page.py",
+          "line": 5,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\tools\\builtin\\test_time_tool.py",
+          "line": 6,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\tools\\builtin\\test_weather.py",
+          "line": 5,
+          "statement": "import requests"
+        },
+        {
+          "file": "tests\\tools\\builtin\\test_web_search.py",
+          "line": 6,
+          "statement": "import requests"
+        }
+      ]
+    },
+    {
+      "package": "curl_cffi",
+      "latest_version": "0.16.3",
+      "last_release_date": "2026-09-02",
+      "days_since_last_release": 42,
+      "requires_python": ">=3.10",
+      "is_at_risk": false,
+      "risk_indicators": [],
+      "usage_locations": [
+        {
+          "file": "src\\jarvis\\tools\\search_http.py",
+          "line": 4,
+          "statement": "from curl_cffi import requests"
+        },
+        {
+          "file": "src\\jarvis\\tools\\search_http.py",
+          "line": 5,
+          "statement": "from curl_cffi.curl import CURL_WRITEFUNC_ERROR"
+        },
+        {
+          "file": "tests\\conftest.py",
+          "line": 234,
+          "statement": "from curl_cffi.requests import Session"
+        },
+        {
+          "file": "tests\\tools\\builtin\\test_web_search.py",
+          "line": 23,
+          "statement": "from curl_cffi.requests import Session"
+        }
+      ]
+    },
+    {
+      "package": "pytest-repeat",
+      "latest_version": "0.9.4",
+      "last_release_date": "2025-04-07",
+      "days_since_last_release": 555,
+      "requires_python": ">=3.9",
+      "is_at_risk": true,
+      "risk_indicators": [
+        "No release in 555 days (Last: 2025-04-07)"
+      ],
+      "usage_locations": []
+    },
+    {
+      "package": "numpy",
+      "latest_version": "2.5.4",
+      "last_release_date": "2026-10-10",
+      "days_since_last_release": 4,
+      "requires_python": ">=3.12",
+      "is_at_risk": false,
+      "risk_indicators": [],
+      "usage_locations": [
+        {
+          "file": "evals\\test_local_whisper_runtime.py",
+          "line": 21,
+          "statement": "import numpy"
+        },
+        {
+          "file": "evals\\test_local_whisper_runtime.py",
+          "line": 41,
+          "statement": "import numpy"
+        },
+        {
+          "file": "evals\\test_local_whisper_runtime.py",
+          "line": 78,
+          "statement": "import numpy"
+        },
+        {
+          "file": "evals\\test_whisper_audio_evidence.py",
+          "line": 31,
+          "statement": "import numpy"
+        },
+        {
+          "file": "evals\\test_whisper_audio_evidence.py",
+          "line": 51,
+          "statement": "import numpy"
+        },
+        {
+          "file": "evals\\test_whisper_audio_evidence.py",
+          "line": 82,
+          "statement": "import numpy"
+        },
+        {
+          "file": "evals\\test_whisper_audio_evidence.py",
+          "line": 104,
+          "statement": "import numpy"
+        },
+        {
+          "file": "evals\\test_whisper_audio_evidence.py",
+          "line": 121,
+          "statement": "import numpy"
+        },
+        {
+          "file": "src\\jarvis\\dictation\\dictation_engine.py",
+          "line": 33,
+          "statement": "import numpy"
+        },
+        {
+          "file": "src\\jarvis\\listening\\listener.py",
+          "line": 107,
+          "statement": "import numpy"
+        },
+        {
+          "file": "src\\jarvis\\output\\tts.py",
+          "line": 874,
+          "statement": "import numpy"
+        },
+        {
+          "file": "src\\jarvis\\output\\tune_player.py",
+          "line": 6,
+          "statement": "import numpy"
+        },
+        {
+          "file": "src\\jarvis\\tools\\selection.py",
+          "line": 173,
+          "statement": "import numpy"
+        },
+        {
+          "file": "src\\jarvis\\utils\\embedding_vector.py",
+          "line": 2,
+          "statement": "import numpy"
+        },
+        {
+          "file": "src\\jarvis\\utils\\fast_vector_store.py",
+          "line": 6,
+          "statement": "import numpy"
+        },
+        {
+          "file": "src\\jarvis\\utils\\vector_store.py",
+          "line": 7,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\test_audio_capture_pipeline.py",
+          "line": 7,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\test_dictation.py",
+          "line": 46,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\test_dictation.py",
+          "line": 62,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\test_dictation.py",
+          "line": 179,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\test_dictation.py",
+          "line": 273,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\test_dictation.py",
+          "line": 305,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\test_dictation.py",
+          "line": 359,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\test_dictation.py",
+          "line": 375,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\test_dictation.py",
+          "line": 389,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\test_dictation.py",
+          "line": 401,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\test_dictation.py",
+          "line": 484,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\test_dictation.py",
+          "line": 712,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\test_dictation.py",
+          "line": 908,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\test_dictation.py",
+          "line": 151,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\test_dictation.py",
+          "line": 354,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\test_dictation.py",
+          "line": 706,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\test_dictation_callback_sessions.py",
+          "line": 7,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\test_dictation_clipboard_failure_reporting.py",
+          "line": 6,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\test_dictation_history.py",
+          "line": 364,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\test_dictation_history.py",
+          "line": 397,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\test_dictation_history_failure_reporting.py",
+          "line": 6,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\test_dictation_session_rate.py",
+          "line": 7,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\test_face_animation.py",
+          "line": 11,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\test_low_confidence_events.py",
+          "line": 9,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\test_nonblocking_voice_capture.py",
+          "line": 7,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\test_settings_window.py",
+          "line": 515,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\test_tune_player.py",
+          "line": 192,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\test_vector_validation.py",
+          "line": 5,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\test_voice_listener.py",
+          "line": 691,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\test_voice_listener.py",
+          "line": 729,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\test_voice_listener.py",
+          "line": 741,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\test_voice_listener.py",
+          "line": 999,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\test_voice_listener.py",
+          "line": 1008,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\test_voice_listener.py",
+          "line": 1022,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\test_voice_listener.py",
+          "line": 1035,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\test_voice_listener.py",
+          "line": 1862,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\test_voice_listener.py",
+          "line": 1119,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\test_voice_pause.py",
+          "line": 5,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\test_whisper_audio_evidence.py",
+          "line": 5,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\test_whisper_performance_guidance.py",
+          "line": 7,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\test_whisper_pre_download.py",
+          "line": 128,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\test_whisper_pre_download.py",
+          "line": 146,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\test_whisper_pre_download.py",
+          "line": 199,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\test_whisper_runtime_recovery.py",
+          "line": 5,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\fixtures\\faster_whisper_bundle_probe.py",
+          "line": 2,
+          "statement": "import numpy"
+        },
+        {
+          "file": "tests\\fixtures\\mlx_bundle_probe.py",
+          "line": 3,
+          "statement": "import numpy"
+        }
+      ]
+    },
+    {
+      "package": "miniupnpc",
+      "latest_version": "2.3.3",
+      "last_release_date": "2025-05-26",
+      "days_since_last_release": 506,
+      "requires_python": null,
+      "is_at_risk": true,
+      "risk_indicators": [
+        "No release in 506 days (Last: 2025-05-26)",
+        "Missing explicit Python version constraints (requires_python)"
+      ],
+      "usage_locations": [
+        {
+          "file": "src\\jarvis\\utils\\location.py",
+          "line": 26,
+          "statement": "import miniupnpc"
+        }
+      ]
+    },
+    {
+      "package": "rapidfuzz",
+      "latest_version": "3.14.6",
+      "last_release_date": "2026-08-30",
+      "days_since_last_release": 45,
+      "requires_python": ">=3.11",
+      "is_at_risk": false,
+      "risk_indicators": [],
+      "usage_locations": [
+        {
+          "file": "src\\jarvis\\listening\\echo_detection.py",
+          "line": 10,
+          "statement": "from rapidfuzz import fuzz"
+        },
+        {
+          "file": "src\\jarvis\\utils\\fuzzy_search.py",
+          "line": 5,
+          "statement": "from rapidfuzz import fuzz, process"
+        }
+      ]
+    },
+    {
+      "package": "faiss-cpu",
+      "latest_version": "1.15.1",
+      "last_release_date": "2026-09-16",
+      "days_since_last_release": 28,
+      "requires_python": ">=3.10",
+      "is_at_risk": false,
+      "risk_indicators": [],
+      "usage_locations": []
+    }
+  ]
+}

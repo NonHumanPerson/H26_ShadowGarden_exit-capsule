@@ -1,0 +1,22 @@
+{
+  "execution_timestamp": "2026-10-15T08:43:59.047103+00:00",
+  "python_version": "3.13.4 (tags/v3.13.4:8a526ec, Jun  3 2025, 17:46:04) [MSC v.1943 64 bit (AMD64)]",
+  "mode": "baseline",
+  "steps": [
+    {
+      "command": "C:\\Users\\dell\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pip install chardet pytest setuptools Jinja2 six toml appdirs pydantic requests python-dateutil click rich nose idna",
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "pygments>=2.7.2 in C:\\Users\\dell\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages (from pytest) (2.19.2)\nRequirement already satisfied: MarkupSafe>=2.0 in C:\\Users\\dell\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages (from Jinja2) (3.0.3)\nRequirement already satisfied: annotated-types>=0.6.0 in C:\\Users\\dell\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages (from pydantic) (0.7.0)\nRequirement already satisfied: pydantic-core==2.41.5 in C:\\Users\\dell\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages (from pydantic) (2.41.5)\nRequirement already satisfied: typing-extensions>=4.14.1 in C:\\Users\\dell\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages (from pydantic) (4.15.0)\nRequirement already satisfied: typing-inspection>=0.4.2 in C:\\Users\\dell\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages (from pydantic) (0.4.2)\nRequirement already satisfied: charset_normalizer<4,>=2 in C:\\Users\\dell\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages (from requests) (3.4.4)\nRequirement already satisfied: urllib3<3,>=1.21.1 in C:\\Users\\dell\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages (from requests) (2.5.0)\nRequirement already satisfied: certifi>=2017.4.17 in C:\\Users\\dell\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages (from requests) (2025.11.12)\nRequirement already satisfied: markdown-it-py>=2.2.0 in C:\\Users\\dell\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages (from rich) (4.0.0)\nRequirement already satisfied: mdurl~=0.1 in C:\\Users\\dell\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages (from markdown-it-py>=2.2.0->rich) (0.1.2)\nDownloading chardet-7.6.0-cp313-cp313-win_amd64.whl (1.2 MB)\n   ---------------------------------------- 1.2/1.2 MB 323.9 kB/s  0:00:03\nDownloading appdirs-1.4.4-py2.py3-none-any.whl (9.6 kB)\nDownloading nose-1.3.7-py3-none-any.whl (154 kB)\nInstalling collected packages: nose, appdirs, chardet\n\nSuccessfully installed appdirs-1.4.4 chardet-7.6.0 nose-1.3.7\n",
+      "stderr": "\n[notice] A new release of pip is available: 26.1.2 -> 26.2.1\n[notice] To update, run: python.exe -m pip install --upgrade pip\n"
+    },
+    {
+      "command": "C:\\Users\\dell\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pytest -v",
+      "exit_code": 4,
+      "passed": false,
+      "stdout": "",
+      "stderr": "[2026-10-15 14:14:09,693] WARNING in core: flasgger is not installed; serving the static landing page at / and skipping the Swagger UI and /spec.json.\nImportError while loading conftest 'C:\\Users\\dell\\AppData\\Local\\Temp\\exit_capsule_4n05h8dh\\LinkWatch\\tests\\conftest.py'.\ntests\\conftest.py:8: in <module>\n    import linkwatch.cli  # noqa: F401\n    ^^^^^^^^^^^^^^^^^^^^\nlinkwatch\\cli.py:6: in <module>\n    from . import __version__, cache, checker, config, resources\nlinkwatch\\resources.py:1: in <module>\n    import pkg_resources\nE   ModuleNotFoundError: No module named 'pkg_resources'\n"
+    }
+  ],
+  "overall_test_passed": false
+}

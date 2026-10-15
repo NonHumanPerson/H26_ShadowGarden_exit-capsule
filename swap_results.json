@@ -1,0 +1,36 @@
+{
+  "execution_timestamp": "2026-10-15T08:15:30.014731+00:00",
+  "python_version": "3.13.4 (tags/v3.13.4:8a526ec, Jun  3 2025, 17:46:04) [MSC v.1943 64 bit (AMD64)]",
+  "mode": "swap",
+  "steps": [
+    {
+      "command": "C:\\Users\\dell\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pip uninstall -y trustme",
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "Found existing installation: trustme 1.2.1\nUninstalling trustme-1.2.1:\n  Successfully uninstalled trustme-1.2.1\n",
+      "stderr": ""
+    },
+    {
+      "command": "C:\\Users\\dell\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pip install trustme",
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "Collecting trustme\n  Using cached trustme-1.2.1-py3-none-any.whl.metadata (5.7 kB)\nRequirement already satisfied: cryptography>=3.1 in C:\\Users\\dell\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages (from trustme) (46.0.3)\nRequirement already satisfied: idna>=2.0 in C:\\Users\\dell\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages (from trustme) (3.11)\nRequirement already satisfied: cffi>=2.0.0 in C:\\Users\\dell\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages (from cryptography>=3.1->trustme) (2.0.0)\nRequirement already satisfied: pycparser in C:\\Users\\dell\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages (from cffi>=2.0.0->cryptography>=3.1->trustme) (2.23)\nUsing cached trustme-1.2.1-py3-none-any.whl (16 kB)\nInstalling collected packages: trustme\nSuccessfully installed trustme-1.2.1\n",
+      "stderr": "\n[notice] A new release of pip is available: 26.1.2 -> 26.2.1\n[notice] To update, run: python.exe -m pip install --upgrade pip\n"
+    },
+    {
+      "command": "C:\\Users\\dell\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pip install httpbin pytest-xdist pytest httpbin~=0.10.0 pytest-httpbin pytest-httpbin==2.1.0 requests[socks] wheel pytest-cov pytest>=3 pytest-mock trustme",
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "l\\Programs\\Python\\Python313\\Lib\\site-packages (from requests[socks]) (3.11)\nRequirement already satisfied: urllib3<3,>=1.21.1 in C:\\Users\\dell\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages (from requests[socks]) (2.5.0)\nRequirement already satisfied: certifi>=2017.4.17 in C:\\Users\\dell\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages (from requests[socks]) (2025.11.12)\nRequirement already satisfied: PySocks!=1.5.7,>=1.5.6 in C:\\Users\\dell\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages (from requests[socks]) (1.7.1)\nRequirement already satisfied: coverage>=7.10.6 in C:\\Users\\dell\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages (from coverage[toml]>=7.10.6->pytest-cov) (7.16.2)\nRequirement already satisfied: cryptography>=3.1 in C:\\Users\\dell\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages (from trustme) (46.0.3)\nRequirement already satisfied: cffi>=2.0.0 in C:\\Users\\dell\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages (from cryptography>=3.1->trustme) (2.0.0)\nRequirement already satisfied: pycparser in C:\\Users\\dell\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages (from cffi>=2.0.0->cryptography>=3.1->trustme) (2.23)\nRequirement already satisfied: blinker>=1.9.0 in C:\\Users\\dell\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages (from flask>=2.2.4->httpbin) (1.9.0)\nRequirement already satisfied: click>=8.1.3 in C:\\Users\\dell\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages (from flask>=2.2.4->httpbin) (8.3.1)\nRequirement already satisfied: itsdangerous>=2.2.0 in C:\\Users\\dell\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages (from flask>=2.2.4->httpbin) (2.2.0)\nRequirement already satisfied: jinja2>=3.1.2 in C:\\Users\\dell\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages (from flask>=2.2.4->httpbin) (3.1.6)\nRequirement already satisfied: markupsafe>=2.1.1 in C:\\Users\\dell\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages (from flask>=2.2.4->httpbin) (3.0.3)\n",
+      "stderr": "\n[notice] A new release of pip is available: 26.1.2 -> 26.2.1\n[notice] To update, run: python.exe -m pip install --upgrade pip\n"
+    },
+    {
+      "command": "C:\\Users\\dell\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -m pytest -v",
+      "exit_code": 1,
+      "passed": false,
+      "stdout": "ps://docs.pytest.org/en/stable/how-to/capture-warnings.html\n=========================== short test summary info ===========================\nFAILED tests/test_adapters.py::test_request_url_handles_leading_path_separators\nFAILED tests/test_requests.py::TestRequests::test_redirect_history_no_self_reference\nFAILED tests/test_requests.py::TestRequests::test_header_no_return_chars[invalid_header8]\nFAILED tests/test_requests.py::TestRequests::test_header_no_return_chars[invalid_header9]\nFAILED tests/test_requests.py::TestRequests::test_header_no_return_chars[invalid_header11]\nFAILED tests/test_requests.py::TestTimeout::test_connect_timeout[timeout0] - ...\nFAILED tests/test_requests.py::TestTimeout::test_connect_timeout[timeout1] - ...\nFAILED tests/test_requests.py::TestTimeout::test_total_timeout_connect[timeout0]\nFAILED tests/test_requests.py::TestTimeout::test_total_timeout_connect[timeout1]\nFAILED tests/test_requests.py::TestPreparingURLs::test_different_connection_pool_for_tls_settings_verify_bundle_unexpired_cert\nFAILED tests/test_utils.py::TestGetNetrcAuth::test_empty_default_credentials_ignored\nFAILED tests/test_utils.py::test__parse_content_type_header[multipart/form-data; boundary = something ; boundary2='something_else' ; no_equals -expected4]\nFAILED tests/test_utils.py::test__parse_content_type_header[multipart/form-data; boundary = something ; boundary2=\"something_else\" ; no_equals -expected5]\nFAILED tests/test_utils.py::test__parse_content_type_header[multipart/form-data; boundary = something ; 'boundary2=something_else' ; no_equals -expected6]\nFAILED tests/test_utils.py::test__parse_content_type_header[multipart/form-data; boundary = something ; \"boundary2=something_else\" ; no_equals -expected7]\nFAILED tests/test_utils.py::test_get_encoding_from_headers[value3-ISO-8859-1]\nFAILED tests/test_utils.py::test_should_bypass_proxies_no_proxy_domain_boundary[http://prelocalhost/-False]\n= 17 failed, 614 passed, 3 skipped, 1 xfailed, 18 warnings in 184.88s (0:03:04) =\n",
+      "stderr": "[2026-10-15 13:45:36,196] WARNING in core: flasgger is not installed; serving the static landing page at / and skipping the Swagger UI and /spec.json.\n127.0.0.1 - - [15/Oct/2026 13:47:14] \"GET /digest-auth/auth/user/pass/SHA-512 HTTP/1.1\" 401 0\n127.0.0.1 - - [15/Oct/2026 13:47:15] \"POST /post HTTP/1.1\" 200 373\n127.0.0.1 - - [15/Oct/2026 13:47:15] \"GET /get HTTP/1.1\" 200 285\n127.0.0.1 - - [15/Oct/2026 13:47:26] \"GET /get HTTP/1.1\" 200 272\n"
+    }
+  ],
+  "overall_test_passed": false
+}
