@@ -35,3 +35,26 @@ Work Log:
 
 Stage Summary:
 - Landing page fully restyled from neon agent-tool to warm editorial (paper-on-charcoal + amber), correctly branded as exit-capsule with the real architecture from the user's diagram
+
+---
+Task ID: 3
+Agent: Super Z (main agent)
+Task: User rejected the warm editorial redesign ("purana wala UI isse accha tha") — restore the original neon dark UI from git, while keeping the factual content fixes (exit-capsule branding, no Autonomous, real architecture, EXIT_CAPSULE.md)
+
+Work Log:
+- Restored all src/ files from git commit 6a56e7c (original neon dark UI: #090d16 bg, emerald/sky/violet/amber accents, glass panels, glow-hover, hud-corners, scanline, Inter + JetBrains Mono fonts)
+- Re-applied content fixes on top of restored design:
+  - constants.ts: skill dir/commands renamed to ~/.agents/skills/exit-capsule/, invocation /exit-capsule
+  - hero.tsx: headline "Dependency Maintenance Agent for Python 3.12/3.13" (Autonomous removed)
+  - layout.tsx metadata: exit-capsule branding, no Autonomous
+  - file-tree.tsx: real modules — run_capsule.py (orchestrator), repo_scanner.py, test_runner.py, knowledge_base, EXIT_CAPSULE.md output (5 entries, neon styling kept)
+  - bento-architecture.tsx: rebuilt to match user's real architecture diagram — run_capsule.py orchestrator card (tall, clone→scan→test→report pipeline viz), repo_scanner.py wide card (manifests + PyPI JSON + AST imports + risk scoring panel), test_runner.py card (pytest -v terminal + install deps/swap mode/capture IO chips), AI Knowledge Base card (webrtcvad→silero-vad, pygame→pygame-ce entries with effort/steps/breaking, +18 more note), full-width EXIT_CAPSULE.md output strip
+  - agent-terminal.tsx: 7 real pipeline steps (clone, parse manifests, AST, PyPI, risk scoring, pytest, compose EXIT_CAPSULE.md), skill footer exit-capsule
+  - capsule-viewer.tsx: artifact header renamed EXIT_CAPSULE.md
+  - navbar.tsx/footer.tsx: brand "exit-capsule", autonomous wording removed
+  - portability.tsx: exit-capsule paths
+- QA: fresh reload = zero console/page errors (stale HMR errors cleared), no horizontal overflow at 390/768/1440, vision QA confirms neon design back + all 4 architecture cards + output strip render, tabs switch with real migration data (silero-vad, rapidocr, pygame-ce, markdownify), copy buttons present, ESLint clean
+- Committed as ae81029
+
+Stage Summary:
+- Original neon dark UI fully restored and user-preferred design preserved; branding corrected to exit-capsule with real architecture (run_capsule.py orchestrator + 3 engines + EXIT_CAPSULE.md output) and no "Autonomous" anywhere
